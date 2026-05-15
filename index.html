@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width,viewport-fit=cover, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>火影忍者手游-官方网站-腾讯游戏</title>
+
+  <!-- Original CDN CSS -->
+  <link rel="stylesheet" href="//ossweb-img.qq.com/images/js/swiper/swiper-4.3.3.min.css">
+  <link rel="stylesheet" href="//game.gtimg.cn/images/hyrz/m/m202003/reset.css">
+  <link rel="stylesheet" href="//game.gtimg.cn/images/hyrz/m/m202003/hearder.css">
+  <link rel="stylesheet" href="//game.gtimg.cn/images/hyrz/m/m202003/main.css">
+  <link rel="stylesheet" href="//game.gtimg.cn/images/hyrz/m/m202003/module.css">
+  <link rel="stylesheet" href="./style.css">
+
+  <style>
+    [v-cloak] { display: none; }
+    body { background: #eddcca; }
+  </style>
+
+  <script>
+    /* REM scaling — identical to original */
+    (function(win, doc) {
+      if (!win.addEventListener) return;
+      var html = doc.documentElement;
+      function setFont() {
+        var k = 750;
+        var w = html.clientWidth > 750 ? 750 : html.clientWidth;
+        html.style.fontSize = w / k * 100 + 'px';
+      }
+      setFont();
+      setTimeout(setFont, 300);
+      doc.addEventListener('DOMContentLoaded', setFont, false);
+      win.addEventListener('resize', setFont, false);
+      win.addEventListener('load', setFont, false);
+    })(window, document);
+  </script>
+</head>
+
+<body id="scroll">
+<div class="wrap dgift-wrap indexTopNav" id="app">
+
+  <!-- ===== HEADER / TOP MENU ===== -->
+  <div class="top-menu">
+    <div class="power">
+      <p><span>火影忍者手游</span><span>深圳腾讯计算机系统有限公司 </span></p>
+      <p><span>版本号：1.48.22</span><span>更新时间：2021.7.8</span></p>
+      <p>
+        <a href="//game.qq.com/contract.shtml">查看应用权限</a>
+        <a href="//game.qq.com/privacy_guide.shtml">查看隐私权限</a>
+      </p>
+    </div>
+
+    <div class="top-menu-btn">
+      <h1 class="logo" id="logo">
+        <a href="//hyrz.qq.com/m/m202003/">
+          <img src="//game.gtimg.cn/images/hyrz/m/m202003/logo.png" alt="火影忍者" />
+        </a>
+        <span class="menu-title">火影忍者</span>
+        <span class="desc">正版授权格斗手游</span>
+      </h1>
+      <div class="top-menu-right">
+        <a href="javascript:showDia('dia-age');" class="topage">适龄提示</a>
+        <a href="javascript:download();" class="topdownload mct_download_btn">下载游戏</a>
+        <a href="//hyrz.qq.com/m/m202003/" class="tophome">进入官网</a>
+        <div class="top-menu-nav" id="menuNavBtn"><i class="draw spr" title="导航开关"></i></div>
+      </div>
+    </div>
+
+    <div class="top-menu-nav-con" id="menuNavCon">
+      <ul>
+        <li><a href="//hyrz.qq.com/m/m202003/index.html">首页</a></li>
+        <li><a href="//hyrz.qq.com/m/m202003/newsList.html">资讯</a></li>
+        <li><a href="//hyrz.qq.com/cp/a20230308ren/m/index.shtml">忍者站</a></li>
+        <li class="nav-sq"><a href="//hyrz.qq.com/cp/a20260327cjsm/">赛事中心</a></li>
+        <li class="nav-sq">
+          <a href="javascript:;">社区</a>
+          <ul class="sq-list">
+            <li><a href="//g0wx.cn/s/eEtZGpunw" class="sq-list-gzh">公众号</a></li>
+          </ul>
+        </li>
+        <li class="nav-sq"><a href="//hyrz.qq.com/cp/a20200320cdkm/index.html">CDK兑换</a></li>
+        <li class="nav-sq"><a href="/m/m202003/ty/index.html">体验专区</a></li>
+        <li><a href="javascript:;" class="btn-m-service">火影手游客服专线</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Customer service dialog -->
+  <div class="m-dialog-box">
+    <div class="m-dialog" id="m-dialog">
+      <a href="javascript:;" class="btn-m-close"></a>
+      <p>火影手游客服专线</p>
+      <img src="//game.gtimg.cn/images/hyrz/m/m202003/service-phone.png" alt="火影忍者-官方客服">
+      <a class="service-phone" href="tel:0755-8692 5388">0755-8692 5388</a>
+    </div>
+  </div>
+
+  <!-- Age warning popup -->
+  <div class="dia-age hide" id="dia-age">
+    <a class="closeDia" href="javascript:closeModal();">×</a>
+    <ol>
+      <li>1）本游戏适用于年满12周岁及以上的用户，建议未成年人在家长监护下使用。</li>
+      <li>2）本游戏基于知名动漫《火影忍者》改编，画面为2D动漫风格，有丰富的音效来烘托游戏氛围。</li>
+      <li>3）根据国家相关要求，游戏中有用户实名认证系统，认证为未成年人的用户受到游戏时间管理。</li>
+      <li>4）游戏提供了丰富的社交系统，包括组织、组队等，玩家之间可以互相交流、互相配合。</li>
+    </ol>
+  </div>
+
+  <!-- Download popup (WeChat) -->
+  <div class="dia dia-download hide" id="dia-download">
+    <a class="closeDia" href="javascript:closeModal();">×</a>
+    <p id="copyText">https://hyrz.qq.com/zlkdatasys/mct/d/play.shtml</p>
+    <a href="javascript:closeModal();" class="btn-dia-download"></a>
+  </div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <div style="margin-top:1.16rem;">
+
+    <!-- KV Background layer -->
+    <div class="sec kv-box">
+      <video class="kv-video" id="kvvideo" type="video/mp4" muted playsinline style="display:none;"></video>
+    </div>
+
+    <!-- KV Overlay layer (buttons/login) -->
+    <div class="sec sec1">
+      <div class="login-content">
+        <p class="login-before unLoginStatus">
+          <a href="javascript:;">请登录</a>
+        </p>
+      </div>
+      <div class="down-content">
+        <a href="//apps.apple.com/cn/app/id955396648" class="btn-down"></a>
+        <a href="//hyrz.qq.com/zlkdatasys/mct/proj_314/download.shtml?media=10000001&back=cururl" class="btn-azdown mct_download_btn"></a>
+        <a href="javascript:download();" class="btn-azjjdown mct_download_btn"></a>
+      </div>
+    </div>
+
+    <!-- Main scrollable sections -->
+    <div class="secs">
+
+      <!-- SEC 2 — News / Announcements -->
+      <div class="sec sec2">
+        <h4 class="title"></h4>
+        <div class="banner-box">
+
+          <!-- Promo banner swiper -->
+          <div class="promo-box">
+            <div class="swiper-container promo-swiper" id="promoSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="//hyrz.qq.com/m/m202003/newsList.html">
+                    <img src="//game.gtimg.cn/images/hyrz/m/m202003/kv.jpg" alt="火影忍者手游">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="//hyrz.qq.com/m/m202003/newsList.html">
+                    <img src="//game.gtimg.cn/images/hyrz/m/m202003/kv.jpg" alt="火影忍者手游">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <!-- News tabs swiper -->
+          <div class="swiper-news">
+            <div class="swiper-container" id="newsSwiper">
+              <ul class="swiper-num">
+                <li class="on" data-idx="0">公告</li>
+                <li data-idx="1">攻略</li>
+                <li data-idx="2">赛事</li>
+              </ul>
+              <div class="swiper-wrapper">
+                <!-- Tab 0: 公告 -->
+                <div class="swiper-slide">
+                  <ul>
+                    <li>
+                      <a href="//hyrz.qq.com/m/m202003/newsList.html" class="top-show flex-around">
+                        <div class="img-box"><img src="//game.gtimg.cn/images/hyrz/m/m202003/icon-1-2.png" alt=""></div>
+                        <p class="text">2026火影忍者手游春季赛季更新</p>
+                        <span class="date">05-15</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="//hyrz.qq.com/m/m202003/newsList.html" class="flex-around">
+                        <span class="news-label">公告</span>
+                        <p class="text text2">【公告】5月15日版本更新公告</p>
+                        <span class="date">05-15</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="//hyrz.qq.com/m/m202003/newsList.html" class="flex-around">
+                        <span class="news-label">公告</span>
+                        <p class="text text2">【公告】新忍者上线预告通知</p>
+                        <span class="date">05-14</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="//hyrz.qq.com/m/m202003/newsList.html" class="flex-around">
+                        <span class="news-label">公告</span>
+                        <p class="text text2">【公告】5月活动时间安排一览</p>
+                        <span class="date">05-12</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Tab 1: 攻略 -->
+                <div class="swiper-slide">
+                  <ul>
+                    <li>
+                      <a href="//hyrz.qq.com/m/m202003/newsList.html" class="top-show flex-around">
+                        <div class="img-box"><img src="//game.gtimg.cn/images/hyrz/m/m202003/icon-1-2.png" alt=""></div>
+                        <p class="text">新手入坑必看超全攻略合集</p>
+                        <span class="date">05-15</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="//hyrz.qq.com/m/m202003/newsList.html" class="flex-around">
+                        <span class="news-label">攻略</span>
+                        <p class="text text2">S级忍者技能搭配最优解析</p>
+                        <span class="date">05-14</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="//hyrz.qq.com/m/m202003/newsList.html" class="flex-around">
+                        <span class="news-label">攻略</span>
+                        <p class="text text2">天梯段位快速晋级技巧详解</p>
+                        <span class="date">05-13</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="//hyrz.qq.com/m/m202003/newsList.html" class="flex-around">
+                        <span class="news-label">攻略</span>
+                        <p class="text text2">本周限时活动领取攻略汇总</p>
+                        <span class="date">05-11</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Tab 2: 赛事 -->
+                <div class="swiper-slide">
+                  <ul>
+                    <li>
+                      <a href="//hyrz.qq.com/m/m202003/newsList.html" class="top-show flex-around">
+                        <div class="img-box"><img src="//game.gtimg.cn/images/hyrz/m/m202003/icon-1-2.png" alt=""></div>
+                        <p class="text">2026春季赛正式启动，全程直播</p>
+                        <span class="date">05-15</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="//hyrz.qq.com/m/m202003/newsList.html" class="flex-around">
+                        <span class="news-label">赛事</span>
+                        <p class="text text2">赛事规则说明及报名通道开放</p>
+                        <span class="date">05-10</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="//hyrz.qq.com/m/m202003/newsList.html" class="flex-around">
+                        <span class="news-label">赛事</span>
+                        <p class="text text2">上赛季总决赛精彩回顾视频</p>
+                        <span class="date">05-08</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="//hyrz.qq.com/m/m202003/newsList.html" class="flex-around">
+                        <span class="news-label">赛事</span>
+                        <p class="text text2">职业联赛选手名单正式公布</p>
+                        <span class="date">05-05</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- SEC 2 E -->
+
+      <!-- SEC 3 — Activity/Events -->
+      <div class="sec sec3 activity">
+        <div class="activity-box">
+          <div class="activity-title"></div>
+          <div class="activity-tab curent">
+            <div class="swiper-container" id="activitySwiper">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <img src="//game.gtimg.cn/images/hyrz/m/m202003/kv.jpg" alt="活动">
+                </li>
+              </ul>
+            </div>
+            <ul class="activity-list">
+              <li class="curent">
+                <i></i>
+                <p class="activity-list-time">
+                  <span class="start-time">5.<em>15</em></span>
+                </p>
+                <p class="activity-list-name">新忍登场</p>
+              </li>
+              <li>
+                <i></i>
+                <p class="activity-list-time">
+                  <span class="start-time">6.<em>01</em></span>
+                </p>
+                <p class="activity-list-name">周年庆典</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- SEC 3 E -->
+
+      <!-- SEC 5 — Ninja profiles swiper -->
+      <div class="sec sec5 ninja-intro">
+        <h4 class="title"></h4>
+        <div class="ninja-intro-box">
+          <div class="swiper-container ninja-swiper" id="ninjaSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="//game.gtimg.cn/images/hyrz/m/m202003/msyrzl_9902.png" alt="忍者">
+              </div>
+              <div class="swiper-slide">
+                <img src="//game.gtimg.cn/images/hyrz/m/m202003/msyrzm_9401.png" alt="忍者">
+              </div>
+            </div>
+            <div class="swiper-button-next swiper-button"></div>
+            <div class="swiper-button-prev swiper-button"></div>
+          </div>
+          <a href="//hyrz.qq.com/cp/a20230308ren/m/index.shtml" class="btn-allninja"></a>
+        </div>
+      </div>
+      <!-- SEC 5 E -->
+
+      <!-- SEC 7 — Content center (view) -->
+      <div class="sec sec7 view">
+        <h4 class="title"></h4>
+        <div class="view-box">
+          <div class="hidden">
+            <div class="view-list-box">
+              <a href="javascript:;" class="view-prev"></a>
+              <div class="swiper-container" id="viewSwiper">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <a href="//hyrz.qq.com/m/m202003/newsList.html?tab=2">
+                      <img src="//game.gtimg.cn/images/hyrz/m/m202003/kv.jpg" alt="">
+                      <p>最新忍者技能演示合集</p>
+                    </a>
+                  </li>
+                  <li class="swiper-slide">
+                    <a href="//hyrz.qq.com/m/m202003/newsList.html?tab=2">
+                      <img src="//game.gtimg.cn/images/hyrz/m/m202003/kv.jpg" alt="">
+                      <p>春季赛精彩集锦视频</p>
+                    </a>
+                  </li>
+                  <li class="swiper-slide">
+                    <a href="//hyrz.qq.com/m/m202003/newsList.html?tab=2">
+                      <img src="//game.gtimg.cn/images/hyrz/m/m202003/kv.jpg" alt="">
+                      <p>新手快速上手教学视频</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <a href="javascript:;" class="view-next"></a>
+            </div>
+          </div>
+        </div>
+        <a href="//hyrz.qq.com/m/m202003/newsList.html?tab=2" class="btn-more"></a>
+      </div>
+      <!-- SEC 7 E -->
+
+      <!-- SEC 4 — Esports center -->
+      <div class="sec sec4">
+        <h4 class="title"></h4>
+        <div class="swiper-match">
+          <div class="swiper-container" id="matchSwiper">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper swiper-no-swiping">
+              <div class="swiper-slide">
+                <div class="event-bg">
+                  <h3 class="txt1"></h3>
+                  <a href="//hyrz.qq.com/cp/a20260327cjsm/" class="event-banner-wrapper">
+                    <div class="event-banner-box">
+                      <img src="//game.gtimg.cn/images/hyrz/m/m202003/kv.jpg" alt="">
+                    </div>
+                  </a>
+                  <a href="//hyrz.qq.com/cp/a20260327cjsm/" class="event-top-show">
+                    <h4 class="event-title">2026春季赛</h4>
+                    <div class="event-info">
+                      <span>时间：2026.05.15—2026.07.01</span>
+                      <span>地点：全国各大城市</span>
+                    </div>
+                  </a>
+                  <ul class="event-news-list">
+                    <li>
+                      <a href="//hyrz.qq.com/m/m202003/newsList.html" class="flex-between">
+                        <p>2026春季赛名称正式公布</p>
+                        <em>05-15</em>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="//hyrz.qq.com/m/m202003/newsList.html" class="flex-between">
+                        <p>参赛选手报名通道正式开启</p>
+                        <em>05-10</em>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="//hyrz.qq.com/m/m202003/newsList.html" class="flex-between">
+                        <p>赛程及赛制规则详细说明</p>
+                        <em>05-08</em>
+                      </a>
+                    </li>
+                  </ul>
+                  <h3 class="txt2"></h3>
+                  <ul class="event-video-list">
+                    <li>
+                      <a href="//hyrz.qq.com/m/m202003/newsList.html">
+                        <div class="img-box">
+                          <img src="//game.gtimg.cn/images/hyrz/m/m202003/kv.jpg" alt="">
+                          <span class="mask"></span>
+                        </div>
+                        <h5 class="event-video-title">上届总决赛精彩集锦</h5>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="//hyrz.qq.com/m/m202003/newsList.html">
+                        <div class="img-box">
+                          <img src="//game.gtimg.cn/images/hyrz/m/m202003/kv.jpg" alt="">
+                          <span class="mask"></span>
+                        </div>
+                        <h5 class="event-video-title">职业选手训练花絮</h5>
+                      </a>
+                    </li>
+                  </ul>
+                  <a href="//hyrz.qq.com/cp/a20260327cjsm/" class="link-more">查看更多</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SEC 4 E -->
+
+    </div>
+    <!-- /.secs -->
+
+  </div>
+  <!-- /main content -->
+
+</div><!-- /#app -->
+
+<!-- Swiper JS from original CDN -->
+<script crossorigin="anonymous" src="//ossweb-img.qq.com/images/js/swiper/swiper-4.3.3.min.js"></script>
+
+<script>
+  /* ---- Rem scaling ---- */
+  (function() {
+    var html = document.documentElement;
+    function setFont() {
+      var k = 750, w = html.clientWidth > 750 ? 750 : html.clientWidth;
+      html.style.fontSize = w / k * 100 + 'px';
+    }
+    setFont();
+    window.addEventListener('resize', setFont);
+  })();
+
+  /* ---- Menu toggle ---- */
+  var menuBtn = document.getElementById('menuNavBtn');
+  var menuCon = document.getElementById('menuNavCon');
+  menuBtn.addEventListener('click', function() {
+    var isOpen = menuCon.classList.toggle('open');
+    menuBtn.classList.toggle('open', isOpen);
+  });
+  document.addEventListener('click', function(e) {
+    if (!menuBtn.contains(e.target) && !menuCon.contains(e.target)) {
+      menuCon.classList.remove('open');
+      menuBtn.classList.remove('open');
+    }
+  });
+
+  /* ---- News tabs (swiper-num) ---- */
+  var newsTabBtns = document.querySelectorAll('#newsSwiper .swiper-num li');
+  var newsSwiperInst;
+
+  /* ---- Age popup / download ---- */
+  function showDia(id) {
+    var el = document.getElementById(id);
+    if (el) {
+      el.classList.remove('hide');
+      el.classList.add('show-dia');
+    }
+  }
+  function closeModal() {
+    document.querySelectorAll('.dia-age, .dia-download').forEach(function(el) {
+      el.classList.add('hide');
+      el.classList.remove('show-dia');
+    });
+  }
+  function isWxApp() { return /MicroMessenger/i.test(navigator.userAgent); }
+  function download() {
+    if (isWxApp()) {
+      showDia('dia-download');
+    } else {
+      window.location.href = '//hyrz.qq.com/zlkdatasys/mct/proj_314/download.shtml?media=10000001&back=cururl';
+    }
+  }
+
+  /* ---- Customer service dialog ---- */
+  document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('btn-m-service')) {
+      document.querySelector('.m-dialog-box').classList.add('on');
+      document.querySelector('.m-dialog').classList.add('on');
+    }
+    if (e.target.classList.contains('btn-m-close')) {
+      document.querySelector('.m-dialog-box').classList.remove('on');
+      document.querySelector('.m-dialog').classList.remove('on');
+    }
+  });
+
+  /* ---- Init Swipers after DOM ---- */
+  window.addEventListener('load', function() {
+
+    /* Promo banner */
+    if (document.getElementById('promoSwiper')) {
+      new Swiper('#promoSwiper', {
+        loop: true,
+        autoplay: { delay: 3000 },
+        pagination: { el: '#promoSwiper .swiper-pagination', clickable: true }
+      });
+    }
+
+    /* News tabs swiper — manual tabs + swiper */
+    if (document.getElementById('newsSwiper')) {
+      newsSwiperInst = new Swiper('#newsSwiper .swiper-container', {
+        noSwiping: false,
+        on: {
+          slideChange: function() {
+            var idx = this.realIndex;
+            newsTabBtns.forEach(function(btn, i) {
+              btn.classList.toggle('on', i === idx);
+            });
+          }
+        }
+      });
+      newsTabBtns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var idx = parseInt(this.getAttribute('data-idx'));
+          newsTabBtns.forEach(function(b) { b.classList.remove('on'); });
+          this.classList.add('on');
+          newsSwiperInst.slideTo(idx);
+        }.bind(btn));
+      });
+    }
+
+    /* Activity */
+    if (document.getElementById('activitySwiper')) {
+      new Swiper('#activitySwiper', { loop: false });
+    }
+
+    /* Ninja intro */
+    if (document.getElementById('ninjaSwiper')) {
+      new Swiper('#ninjaSwiper', {
+        loop: true,
+        navigation: {
+          nextEl: '#ninjaSwiper .swiper-button-next',
+          prevEl: '#ninjaSwiper .swiper-button-prev'
+        }
+      });
+    }
+
+    /* View / content center */
+    if (document.getElementById('viewSwiper')) {
+      new Swiper('#viewSwiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        freeMode: true
+      });
+    }
+
+    /* Match */
+    if (document.getElementById('matchSwiper')) {
+      new Swiper('#matchSwiper', {
+        pagination: { el: '#matchSwiper .swiper-pagination', clickable: true }
+      });
+    }
+  });
+</script>
+
+</body>
+</html>

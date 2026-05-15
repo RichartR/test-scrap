@@ -1,0 +1,1934 @@
+<html lang="en"><head>
+    <meta charset="gbk">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <!-- 为了防止页面数字被识别为电话号码，可根据实际需要添加： -->
+    <meta name="format-detection" content="telephone=no">
+    <!-- 让添加到主屏幕的网页再次打开时全屏展示，可添加：   -->
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-CP">
+    <meta name="Copyright" content="Tencent">
+    <meta name="Keywords" content="火影, 火影忍者, 火影手游, 火影忍者手游, 格斗, 格斗手游, 手游, 火影忍者格斗手游, 火影格斗手游, 动作手游, 鸣人, 佐助, 卡卡西, 我爱罗, 四代、佩恩, 宇智波, 小樱, 雏田, 大蛇丸, 横版过关, 横版, 横版闯关, 忍术, RPG ">
+    <meta name="Description" content="《火影忍者》手游作为正版火影忍者格斗手游，在严谨还原原作故事的基础上，独创忍术格斗系统，配合CG级华丽技能表现，尽兴体验酣畅淋漓的格斗连招；更可以自由收集热门忍者，追寻属于自己的英雄忍道！">
+    <link rel="icon" type="image/png" href="//game.gtimg.cn/images/hyrz/m2026/favicon.png">
+    <title>火影忍者手游-官方网站-腾讯游戏</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script>
+        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|ArkWeb/i.test(navigator.userAgent)) {
+            window.location.href = "//hyrz.qq.com/web2026/index.html" + location.search;
+        }
+    </script>
+<style>/*
+	PC端登录相关样式
+	less使用方式：
+	lessc login.css login-min.css -x
+*/
+
+
+/*qq登录*/
+.milo-qqLogin{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    display: none;
+}
+.milo-qqLogin .qqLoginCover{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+    background-color: white;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+.milo-qqLogin .qqLoginContent{
+    width: 650px;
+    height: 400px;
+    background-color: #fff;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 10000;
+    margin-left: -375px;
+    margin-top: -225px;
+    border: 1px solid #bfbfbf;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3)
+}
+.milo-qqLogin .qqLoginFrame{
+	width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border: 0px solid white
+}
+
+/*微信登录*/
+.milo-wxLogin{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    display: none;
+}
+.milo-wxLogin .wxLoginCover{
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+    background-color: white;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+.milo-wxLogin .wxLoginContent{
+    box-sizing: content-box;
+	width: 300px;
+    height: 460px;
+    background-color: #fff;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 10000;
+    margin-left: -150px;
+    margin-top: -230px;
+    border: 1px solid #bfbfbf;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    padding:0px 20px;
+}
+.milo-wxLogin .wxLoginContent .wxLoginClose{
+    height: 40px;
+    width: 100%;  
+}
+.milo-wxLogin .wxLoginContent .wxLoginClose a{
+	line-height: 36px;
+    text-align: center;
+	float: right;
+	margin-right: -20px;
+    height: 40px;
+    width: 40px;
+    display:inline-block;
+	color: rgb(102, 102, 102);
+    font-family: Verdana, sans-serif;
+    font-size: 30px;
+    text-decoration:none;
+    cursor: pointer;
+}
+.milo-wxLogin .wxLoginContent .wxLoginClose a:hover{
+	color: rgb(240, 115, 115);
+    font-family: Verdana, sans-serif;
+}
+.milo-wxLogin .wxLoginContent .wxLoginBox{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+
+
+/*qq微信登录*/
+
+.milo-qqwx-login {
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    display: none
+}
+
+.qqwx-login-cover {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 9999;
+    background-color: white;
+    opacity: 0.7;
+    filter: alpha(opacity=70)
+}
+
+.qqwx-login-frame {
+    width: 750px;
+    height: 470px;
+    background-color: white;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 10000;
+    margin-left: -375px;
+    margin-top: -240px;
+    border: 1px solid #bfbfbf;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    border-radius: 5px 5px 0px 0px;
+}
+
+.qqwx-tabs {
+    line-height: 40px;
+    /* position: absolute; */
+    z-index: 100001;
+    width: 100%;
+    height: 40px;
+}
+
+.qqwx-tabs .qq-tab,
+.qqwx-tabs .wx-tab {
+    cursor: pointer;
+    display: inline-block;
+    width: 50%;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    background-color: #f1f1f1;
+    color: #b1b1b1;
+    text-decoration: none
+}
+
+.qqwx-active-qq a.qq-tab {
+    color: #fff;
+    background-color: #51b7ec
+}
+
+.qqwx-active-wx a.wx-tab {
+    color: #fff;
+    background-color: #4ab218
+}
+
+.qqwx-tabs .qqwxtab-close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    text-decoration: none;
+    color: grey;
+    font-size: 25px;
+    line-height: 25px;
+    display: inline-block;
+    padding: 0px 5px;
+    border-width: 0px 0px 1px 1px;
+    border-style: solid
+}
+
+.qqwx-active-qq .qqwx-tabs .qqwxtab-close {
+    border-color: #e0dcdc
+}
+
+.qqwx-active-wx .qqwx-tabs .qqwxtab-close {
+    border-color: #8BC34A;
+    color: #d4d2d2
+}
+
+.qqwx-tabs .qqwxtab-close:hover {
+    font-weight: bold
+}
+
+.qqwx-tips {
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+    color: #a2a2a2;
+    position: absolute;
+    height: 32px;
+    width: 100%;
+    top: 40px;
+    z-index: 10001;
+    background-color: #fff;
+    border: none;
+}
+
+.qqwx-frame {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    overflow: hidden;
+    border: none;
+    top: 70px;
+}
+
+.qqwx-frame div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+    display: none;
+    border: none;
+}
+
+.qqwx-frame div iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.qqwx-active-qq div.qqwx-frame-qq-div {
+    display: block
+}
+
+.qqwx-active-wx div.qqwx-frame-wx-div {
+    display: block
+}
+
+i.ico-qq-logo,
+i.ico-wx-logo {
+    display: inline-block;
+    height: 23px;
+    vertical-align: middle;
+    margin: 0px 5px;
+    margin-top: -4px;
+    background: url(https://vm.gtimg.cn/tencentvideo/vstyle/web/common/style/img/login/sprite_login.png?d=0210&max_age=31104000) no-repeat
+}
+
+i.ico-qq-logo {
+    width: 20px
+}
+
+i.ico-wx-logo {
+    width: 24px
+}
+
+.qqwx-active-wx i.ico-qq-logo {
+    background-position: -180px -90px
+}
+
+.qqwx-active-wx i.ico-wx-logo {
+    background-position: -250px -90px
+}
+
+.qqwx-active-qq i.ico-qq-logo {
+    background-position: -200px -90px
+}
+
+.qqwx-active-qq i.ico-wx-logo {
+    background-position: -220px -90px
+}
+
+div#qqwx-frame-wx-div {
+    top: 20px
+}
+
+
+/*qc登录*/
+
+.loginframe {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border: 0px solid white
+}
+
+.milo-qConnectLogin {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px
+}
+
+.qConnectLoginCover {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 9999;
+    background-color: white;
+    opacity: 0.7;
+    filter: alpha(opacity=70)
+}
+
+.qConnectLoginContent {
+    width: 752px;
+    height: 400px;
+    background-color: #fff;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 10000;
+    margin-left: -375px;
+    margin-top: -220px;
+    border: 1px solid #bfbfbf;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3)
+}
+
+.qConnectLoginContent>div {
+    height: 30px;
+    width: 100%;
+    /* background-color: #4fb7ec; */
+    background-color: #fff;
+    font-size: 18px
+}
+
+.qConnectLoginContent>div span {
+    color: white;
+    display: inline-block;
+    line-height: 30px;
+    padding: 0px 5px
+}
+
+.qConnectLoginContent>div a {
+    float: right;
+    line-height: 30px;
+    text-decoration: none;
+    color: #009aff;
+    font-weight: bold;
+    font-size: 25px;
+    width: 30px;
+    text-align: center;
+    cursor: pointer
+}
+
+.qConnectLoginContent>div a:hover {
+    color: #f57272
+}
+
+.qConnectLoginContent>div {
+    position: absolute;
+    z-index: 100001;
+    right: 0px;
+    width: 30px;
+    top: 0px;
+    height: 48px;
+    text-align: center
+}
+
+.qConnectLoginContent>div a {
+    line-height: 40px;
+    display: inline-block
+}
+
+
+/*qc微信登录*/
+
+.milo-qcwx-login {
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    display: none
+}
+
+.qcwx-login-cover {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 9999;
+    background-color: white;
+    opacity: 0.7;
+    filter: alpha(opacity=70)
+}
+
+.qcwx-login-frame {
+    width: 750px;
+    height: 470px;
+    background-color: white;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 10000;
+    margin-left: -375px;
+    margin-top: -240px;
+    border: 1px solid #bfbfbf;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    border-radius: 5px 5px 0px 0px;
+}
+
+.qcwx-tabs {
+    line-height: 40px;
+    position: absolute;
+    z-index: 100001;
+    width: 100%
+}
+
+.qcwx-tabs .qc-tab,
+.qcwx-tabs .wx-tab {
+    cursor: pointer;
+    display: inline-block;
+    width: 50%;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    background-color: #f1f1f1;
+    color: #b1b1b1;
+    text-decoration: none
+}
+
+.qcwx-active-qc a.qc-tab {
+    color: #fff;
+    background-color: #51b7ec
+}
+
+.qcwx-active-wx a.wx-tab {
+    color: #fff;
+    background-color: #4ab218
+}
+
+.qcwx-tabs .qcwxtab-close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    text-decoration: none;
+    color: grey;
+    font-size: 25px;
+    line-height: 25px;
+    display: inline-block;
+    padding: 0px 5px;
+    border-width: 0px 0px 1px 1px;
+    border-style: solid
+}
+
+.qcwx-active-qc .qcwx-tabs .qcwxtab-close {
+    border-color: #e0dcdc
+}
+
+.qcwx-active-wx .qcwx-tabs .qcwxtab-close {
+    border-color: #8BC34A;
+    color: #d4d2d2
+}
+
+.qcwx-tabs .qcwxtab-close:hover {
+    font-weight: bold
+}
+
+.qcwx-tips {
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+    color: #a2a2a2;
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    z-index: 10001;
+    background-color: #fff;
+}
+
+.qcwx-frame {
+    width: 750px;
+    height: 470px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.qcwx-frame div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+    display: none
+}
+
+.qcwx-frame div iframe {
+    width: 100%;
+    height: 100%
+}
+
+.qcwx-active-qc div.qcwx-frame-qc-div {
+    display: block
+}
+
+.qcwx-active-wx div.qcwx-frame-wx-div {
+    display: block;
+    top: 70px;
+    height: 400px;
+}
+
+i.ico-qc-logo,
+i.ico-wx-logo {
+    display: inline-block;
+    height: 23px;
+    vertical-align: middle;
+    margin: 0px 5px;
+    margin-top: -4px;
+    background: url(https://vm.gtimg.cn/tencentvideo/vstyle/web/common/style/img/login/sprite_login.png?d=0210&max_age=31104000) no-repeat
+}
+
+i.ico-qc-logo {
+    width: 20px
+}
+
+i.ico-wx-logo {
+    width: 24px
+}
+
+.qcwx-active-wx i.ico-qc-logo {
+    background-position: -180px -90px
+}
+
+.qcwx-active-wx i.ico-wx-logo {
+    background-position: -250px -90px
+}
+
+.qcwx-active-qc i.ico-qc-logo {
+    background-position: -200px -90px
+}
+
+.qcwx-active-qc i.ico-wx-logo {
+    background-position: -220px -90px
+}
+
+div#qcwx-frame-wx-div {
+    top: 20px
+}
+
+
+/*wegame登录*/
+
+.wegameloginframe {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    border: 0px solid white
+}
+
+.milo-wegameLogin {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px
+}
+
+.wegameLoginCover {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 9999;
+    background-color: white;
+    opacity: 0.7;
+    filter: alpha(opacity=70)
+}
+
+.wegameLoginContent {
+    width: 800px;
+    height: 600px;
+    background-color: #fff;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 10000;
+    margin-left: -400px;
+    margin-top: -300px;
+    border: 1px solid #bfbfbf;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3)
+}
+
+.wegameLoginContent>div {
+    height: 30px;
+    width: 100%;
+    background-color: none;
+    font-size: 18px
+}
+
+.wegameLoginContent>div.wegameLoginTitle {
+    width: 100%;
+    background-color: #0e0e0e
+}
+
+div.wegameLoginIcon {
+    display: none
+}
+
+.wegameLoginTitle>div.wegameLoginIcon {
+    display: block;
+    float: left;
+    width: 239px;
+    height: 60px;
+    background: url(https://api.rail.tgp.qq.com/web/oauth2.0/login/images/wegame-logo-m.png) no-repeat center;
+    margin-left: 10px
+}
+
+.wegameLoginContent>div span {
+    color: white;
+    display: inline-block;
+    line-height: 30px;
+    padding: 0px 5px
+}
+
+.wegameLoginContent>div a {
+    float: right;
+    line-height: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    width: 30px;
+    text-align: center;
+    cursor: pointer
+}
+
+.wegameLoginContent>div a:hover {
+    color: #f57272
+}
+
+.wegameLoginContent>div {
+    position: absolute;
+    z-index: 100001;
+    right: 0px;
+    width: 30px;
+    top: 0px;
+    height: 60px;
+    text-align: center
+}
+
+.wegameLoginContent>div a {
+    line-height: 55px;
+    display: inline-block
+}
+
+</style><style>#milo_qzone_share {
+    width: 860px;
+    height: 445px;
+    z-index: 900;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    margin: auto;
+    border: 1px solid #225EA8;
+    background-color: #fff;
+}
+
+#milo_qzone_share_title {
+    width: 100%;
+    background: url(https://ossweb-img.qq.com/images/gamevip/act/act_comm/lz_top_spr_v2.png) repeat-x 0 -97px;
+    height: 36px;
+    margin: 0px;
+}
+
+#milo_qzone_share_title span {
+    float: left;
+    display: inline;
+    margin: 5px 0 0 12px;
+    font-weight: bold;
+    height: 27px;
+    line-height: 25px;
+    padding-left: 8px;
+    font-size: 14px;
+    color: #fff;
+}
+
+#milo_qzone_share_content {
+    text-align: center;
+    overflow: hidden;
+    height: 440px;
+}
+
+#milo_qzone_share_title a {
+    float: right;
+    display: inline;
+    margin: 10px 10px 0 0;
+    width: 14px;
+    height: 13px;
+    text-indent: -999em;
+    overflow: hidden;
+    background: url(https://ossweb-img.qq.com/images/gamevip/act/act_comm/lz_top_spr_v2.png) no-repeat -297px -5px;
+}</style><style>.milo-dialog__wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  margin: 0;
+}
+.milo-dialog__wrapper .milo-dialog {
+  position: relative;
+  margin: 100px auto;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 300px;
+  background-color: #fff;
+}
+.milo-dialog__wrapper .milo-dialog .milo-dialog__header {
+  padding: 20px 20px 10px;
+}
+.milo-dialog__wrapper .milo-dialog .milo-dialog__header .milo-dialog__title {
+  line-height: 24px;
+  font-size: 18px;
+  color: #303133;
+}
+.milo-dialog__wrapper .milo-dialog .milo-dialog__header .milo-dialog__headerbtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+  background: 0 0;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  font-size: 16px;
+  color: #909399;
+}
+.milo-dialog__wrapper .milo-dialog .milo-dialog__header .milo-dialog__headerbtn:focus,
+.milo-dialog__wrapper .milo-dialog .milo-dialog__header .milo-dialog__headerbtn :hover {
+  color: #409eff;
+}
+.milo-dialog__wrapper .milo-dialog .milo-dialog__body {
+  padding: 30px 20px;
+  color: #606266;
+  font-size: 14px;
+  word-break: break-all;
+}
+.milo-dialog__wrapper .milo-dialog .milo-dialog__footer {
+  padding: 10px 20px 20px;
+  text-align: right;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.milo-dialog__wrapper .milo-dialog .milo-dialog__footer .milo-button {
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #dcdfe6;
+  color: #606266;
+  -webkit-appearance: none;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0 5px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  font-weight: 500;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.milo-dialog__wrapper .milo-dialog .milo-dialog__footer .milo-button:focus,
+.milo-dialog__wrapper .milo-dialog .milo-dialog__footer .milo-button:hover {
+  color: #409eff;
+  border-color: #c6e2ff;
+  background-color: #ecf5ff;
+}
+.milo-dialog__wrapper .milo-dialog .milo-dialog__footer .milo-button.primary {
+  background: #3a8ee6;
+  border-color: #3a8ee6;
+  color: #fff;
+}
+.milo-dialog__wrapper .milo-dialog .milo-dialog__footer .milo-button.primary:focus,
+.milo-dialog__wrapper .milo-dialog .milo-dialog__footer .milo-button.primary:hover {
+  background: #66b1ff;
+  border-color: #66b1ff;
+  color: #fff;
+}
+.milo-dialog-mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: #000;
+  z-index: 2002;
+}
+</style><style>.milo-item {
+  line-height: 45px;
+  font-size: 14px;
+  padding: 3px 0;
+  width: 100%;
+}
+.milo-item select,
+.milo-item .milo_input {
+  background-color: #fff;
+  background-image: none;
+  border-radius: 4px;
+  border: 1px solid #dcdfe6;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #606266;
+  display: inline-block;
+  font-size: inherit;
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  -webkit-transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  width: 100%;
+}
+.milo-item select {
+  padding: 0 15px;
+}
+.milo-item .milo_input {
+  padding: 0 19px;
+}
+#milo_auto_role_text {
+  margin-left: 5px;
+}
+#milo_auto_role {
+  max-height: 130px;
+  overflow: scroll;
+}
+#milo_auto_role_wrapper {
+  line-height: 26px;
+}
+.milo-PIPInfo {
+  margin-right: 5px;
+  border: 1px solid #dcdfe6;
+  -webkit-appearance: checkbox;
+}
+#milo-error-message {
+  display: none;
+  color: #f00;
+}
+.milo_select {
+  max-height: 200px;
+  overflow: auto;
+  cursor: pointer;
+}
+.milo_select li {
+  list-style: none;
+}
+.milo_input:disabled {
+  opacity: 0.7;
+}
+</style><style>.milo-alert-frame {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1002;
+}
+.milo-alert-mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: #000;
+  z-index: 9998;
+}
+.milo-alert {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.milo-alert-box {
+  display: inline-block;
+  width: 420px;
+  padding-bottom: 10px;
+  vertical-align: middle;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #ebeef5;
+  font-size: 18px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+  text-align: left;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+.milo-alert-box .milo-alert-header {
+  position: relative;
+  padding: 15px 15px 10px;
+}
+.milo-alert-box .milo-alert-header .milo-alert-close-btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+  background: url("https://ossweb-img.qq.com/images/milosdk/close.png");
+  background-size: contain;
+  cursor: pointer;
+}
+.milo-alert-box .milo-alert-content {
+  padding: 10px 15px;
+  color: #606266;
+  font-size: 14px;
+}
+.milo-alert-box .milo-alert-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 15px 0;
+}
+.milo-alert-box .milo-alert-footer div {
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 1px solid #dcdfe6;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  transition: 0.1s;
+  font-weight: 500;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  color: #fff;
+  margin: 0 5px;
+  min-width: 88px;
+}
+.milo-alert-box .milo-alert-footer .milo-btn-confirm {
+  background-color: #409eff;
+  border-color: #409eff;
+  display: none;
+}
+.milo-alert-box .milo-alert-footer .milo-btn-cancel {
+  background-color: #a7a6a4;
+  border-color: #a7a6a4;
+  display: none;
+}
+.milo-alert-box-mobile {
+  display: inline-block;
+  width: 80vw;
+  vertical-align: middle;
+  background-color: #fff;
+  border-radius: 16px;
+  border: 1px solid #ebeef5;
+  font-size: 16px;
+  color: #606266;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+  text-align: center;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+.milo-alert-box-mobile .milo-alert-header {
+  position: relative;
+  padding: 27px 15px 0;
+  color: #000;
+  font-weight: bold;
+}
+.milo-alert-box-mobile .milo-alert-header .milo-alert-close-btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+  background: url("https://ossweb-img.qq.com/images/milosdk/close.png");
+  background-size: contain;
+  cursor: pointer;
+}
+.milo-alert-box-mobile .milo-alert-content {
+  padding: 15px;
+  color: #606266;
+  font-size: 14px;
+  border-bottom: 1px solid #ebeef5;
+}
+.milo-alert-box-mobile .milo-alert-footer {
+  display: flex;
+}
+.milo-alert-box-mobile .milo-alert-footer div {
+  padding: 15px;
+  display: inline-block;
+  width: 50%;
+  box-sizing: border-box;
+}
+.milo-alert-box-mobile .milo-alert-footer .milo-btn-cancel {
+  display: none;
+  border-right: 1px solid #ebeef5;
+  color: #000;
+}
+.milo-alert-box-mobile .milo-alert-footer .milo-btn-confirm {
+  flex: 1;
+  color: #0f4379;
+  display: none;
+}
+</style><style>#milo-feedback::-webkit-scrollbar {
+  width: 7px;
+  height: 6px;
+  background-color: #fff;
+}
+#milo-feedback::-webkit-scrollbar-track {
+  border-radius: 2px;
+  background-color: #fff;
+}
+#milo-feedback::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #babdc2;
+}
+#milo-feedback {
+  height: 450px;
+}
+#milo-feedback .tabs {
+  display: flex;
+  justify-content: center;
+}
+#milo-feedback .tabs .tab {
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+#milo-feedback .tabs .tab.active {
+  background-color: #ccc;
+}
+#milo-feedback .tab-content {
+  display: none;
+  padding: 10px;
+}
+#milo-feedback .tab-content.active {
+  display: block;
+}
+#milo-feedback .sub-tabs {
+  display: flex;
+  justify-content: center;
+}
+#milo-feedback .sub-tab {
+  padding: 2px 10px;
+  cursor: pointer;
+}
+#milo-feedback .sub-tab.active {
+  color: #409eff;
+  border-bottom: #409eff 1px solid;
+}
+#milo-feedback .sub-tab-content {
+  display: none;
+  text-align: left;
+}
+#milo-feedback .sub-tab-content.active {
+  display: block;
+}
+#milo-feedback .milo-form-label {
+  vertical-align: middle;
+  float: left;
+  width: 100px;
+  font-size: 14px;
+  color: #606266;
+  line-height: 30px;
+  padding: 0 12px 0 0;
+  box-sizing: border-box;
+}
+#milo-feedback .milo-form-item {
+  background-color: #fff;
+  background-image: none;
+  border-radius: 4px;
+  border: 1px solid #dcdfe6;
+  box-sizing: border-box;
+  color: #606266;
+  display: inline-block;
+  font-size: inherit;
+  height: 40px;
+  outline: none;
+  padding: 0 15px;
+  display: inline-block;
+  transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  width: 250px;
+}
+#milo-feedback .milo-form-row {
+  clear: both;
+  padding: 2px 0;
+}
+#milo-feedback .milo-form-label.is-require:before {
+  content: "*";
+  color: #f56c6c;
+  margin-right: 4px;
+}
+#milo-feedback textarea {
+  height: 70px !important;
+}
+#milo-feedback  select {
+  margin: 3px 0;
+}
+#milo-feedback #milo-feedback-submit {
+  color: #fff;
+  background-color: #409eff;
+  border-color: #409eff;
+  width: 100%;
+  height: 50px;
+  border: 0;
+}
+#milo-feedback .list-container {
+  min-height: 360px;
+  height: 360px;
+  overflow-y: auto;
+}
+#milo-feedback .list {
+  list-style-type: none;
+  padding: 0;
+}
+#milo-feedback .list li {
+  transition: background-color 0.3s ease;
+}
+#milo-feedback .list li .item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: #f6f9fc;
+  border-radius: 6px;
+  padding: 5px 15px;
+}
+#milo-feedback .remark {
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+}
+#milo-feedback .list li .item-reply {
+  padding: 5px 20px;
+  background-color: #f6f9fc;
+  border-radius: 6px;
+  margin: 10px 0;
+  margin-left: 15px;
+}
+#milo-feedback .list li .item-title {
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#milo-feedback .list li .toggle-btn {
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+#milo-feedback .list li .item-content {
+  margin-top: 10px;
+  display: none;
+  padding-left: 20px;
+  transition: opacity 0.3s ease;
+}
+#milo-feedback .nodata {
+  text-align: center;
+}
+#milo-feedback .list li .arrow-up,
+#milo-feedback .list li .arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+#milo-feedback .list li .arrow-up {
+  border-bottom: 5px solid #000;
+}
+#milo-feedback .list li .arrow-down {
+  border-top: 5px solid #000;
+}
+</style><style>#milo-invite-code {
+  width: 100%;
+  display: flex;
+}
+#milo-invite-text {
+  background-color: #f2f3f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #1d2129;
+  font-weight: 400;
+  border: 1px solid #165dff;
+}
+#milo-invite-btn {
+  background-color: #3c7eff;
+  color: #fff;
+  border: 1px solid transparent;
+  padding: 0 10px;
+  font-size: 12px;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 2px;
+  font-weight: 400;
+}
+</style><style>.milo-bind-container {
+  width: 100%;
+  height: 70px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+#milo-bind-userinfo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#milo-bind-user {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-left: 10px;
+}
+#milo-bind-name {
+  margin-left: 10px;
+  font-size: 15px;
+}
+#milo-bind-img {
+  width: auto;
+  max-height: 80%;
+  border-radius: 50%;
+}
+#milo-bind-status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+#milo-unbind-user {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#milo-unbind-img {
+  width: auto;
+  max-height: 80%;
+  margin-left: 10px;
+}
+#milo-unbind-status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin-right: 10px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+</style><style>.miloui-selector {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #dcdfe6;
+  color: #606266;
+  border-radius: 4px;
+  font-size: 14px;
+  position: relative;
+}
+.milo-disabled .miloui-selector-value {
+  color: #c9cdd4;
+  cursor: not-allowed;
+}
+.miloui-selector:hover {
+  border-color: #c0c4cc;
+}
+.miloui-selector-value {
+  min-width: 2px;
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+  cursor: pointer;
+  user-select: none;
+  box-sizing: border-box;
+}
+.miloui-selector-value:after {
+  content: ' ';
+  display: inline-block;
+  -webkit-transform: rotate(314deg);
+  -ms-transform: rotate(314deg);
+  transform: rotate(314deg);
+  height: 0.5rem;
+  width: 0.5rem;
+  border-width: 0 0 2px 2px;
+  border-style: solid;
+  position: absolute;
+  top: 13px;
+  right: 13px;
+}
+.miloui-selector-options {
+  position: absolute;
+  height: auto;
+  min-height: 40px;
+  max-height: 240px;
+  border: 1px solid #dcdfe6;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 8px;
+  overflow: auto;
+  background-color: #fff;
+  z-index: 9999;
+  user-select: none;
+}
+.miloui-selector-option-item {
+  padding: 5px;
+  line-height: 30px;
+  height: 40px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.miloui-selector-option-item:hover {
+  background-color: #f5f7fa;
+}
+.miloui-selector-option-item_active {
+  color: #f00;
+}
+.miloui-selector-value.miloui-empty:before {
+  position: absolute; /*强制使伪元素脱离文档流，否则ff下输入的文字会跟在placeholder后面*/
+  content: attr(placeholder); /*注意这里不能用引号*/
+  color: #ddd;
+  cursor: text;
+}
+</style></head>
+
+<body>
+    <div id="app"><div class="topnav"><h1 class="topnav-logo"><a href="//hyrz.qq.com/m/"><img src="//game.gtimg.cn/images/hyrz/m2026/favicon.png" alt=""> <p><strong>火影忍者</strong> <span>正版火影 格斗手游 </span></p></a></h1> <div class="topnav-box"><a href="javascript:TGDialogS('age');" class="topnav-age">适龄提示</a> <a href="//hyrz.qq.com/zlkdatasys/mct/proj_314/download.shtml?media=10000001&amp;back=cururl" class="topnav-dowload">下载游戏</a> <a href="javascript:;" onclick="this.classList.toggle('open'),$('.topnav-item').toggleClass('open');" class="topnav-nav"><i></i></a></div> <div class="topnav-item"><ul><li><a href="//hyrz.qq.com/m2026/">首页</a></li> <li><a href="//hyrz.qq.com/m/m202003/newsList.html">新闻资讯</a></li> <li><a href="//hyrz.qq.com/m/m202003/newsList.html?tab=4">视频中心</a></li> <li><a href="//hyrz.qq.com/cp/a20230308ren/m/index.shtml">忍者站</a></li> <li><a href="//hyrz.qq.com/cp/a20260327cjsm/">赛事中心</a></li> <li><a href="javascript:;">社区互动</a> <ul><li><a href="//g0wx.cn/s/eEtZGpunw">公众号</a></li> <li><a href="//www.biligame.com/detail/?id=104459&amp;sourceFrom=2000040011&amp;spm_id_from=333.337.0.0">B站</a></li> <li><a href="javascript:TGDialogS('codeks');">快手</a></li> <li><a href="javascript:TGDialogS('codeqbs');">情报社</a></li> <li><a href="javascript:TGDialogS('codeqbswx');">情报社-微信</a></li> <li><a href="javascript:TGDialogS('codeqbsqq');">情报社-QQ</a></li></ul></li> <li><a href="//hyrz.qq.com/cp/a20200320cdkm/index.html">CDK兑换</a></li> <li><a href="//hyrz.qq.com/web202003/ty/index.html">体验专区</a></li> <li><a href="javascript:TGDialogS('phone');">客服专线</a></li></ul></div></div> <div class="kv page"><a href="javascript:;" class="kv-logo">LOGO</a> <h1 class="kv-slogan">纲手忍界大战登场</h1> <div class="kv-dowload"><p class="kv-dowload-ios" style="display: flex;"><a href="//apps.apple.com/cn/app/id955396648">ios</a></p> <p class="kv-dowload-android" style="display: none;"><a href="//hyrz.qq.com/zlkdatasys/mct/proj_314/download.shtml?media=10000001&amp;back=cururl">安卓完整版</a> <a href="//gamer-1258344700.cos.ap-shanghai.myqcloud.com/1646123244707432948_412b1e8cf9b80d62274bf81c28e0ce5b.apk">安卓简体版</a></p></div> <div class="kv-copyright">版权标</div> <div class="kv-welfare"><ul><li></li></ul> <a href="javascript:TGDialogS('reward');">官网注册福利</a></div> <div class="kv-login"><p id="unLoginStatus" class="login" style="display: block;">
+                    你好，请【<a href="javascript:TGDialogS('diaLogin');" title="">登录</a>】
+                </p> <p id="loginStatus" class="login" style="display: none;"><span id="loginName">欢迎您，<span id="hyLoginName">***</span></span> <span class="bindName" style="display: none;"><span id="hyAreaInfo"></span><span id="hyRoleInfo"></span></span> <span id="hyBindRole">【绑定角色】</span></p></div></div> <div class="wrap"><div class="content page"><div class="content-box"><div class="content-banner"><div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-ios swiper-backface-hidden"><ul class="swiper-wrapper" id="swiper-wrapper-d402d7cf138cc10ac" aria-live="off" style="transition-duration: 0ms; transform: translate3d(-1011px, 0px, 0px);"><li class="swiper-slide" style="width: 337px;"><a href="https://hyrz.qq.com/cp/a20230308ren/page.shtml?rzwyID=72a2a539"><img src="//static.gametalk.qq.com/image/25/1778760421_f6c61afae8a61cf69f23f4fd071570b0.png" alt=""></a></li><li class="swiper-slide" style="width: 337px;"><a href="https://hyrz.qq.com/cp/a20230308ren/page.shtml?rzwyID=72a2a50b"><img src="//static.gametalk.qq.com/image/25/1778760408_4658db8eaa3785bfb0b11ebc9423896f.png" alt=""></a></li><li class="swiper-slide swiper-slide-prev" style="width: 337px;"><a href="https://hyrz.qq.com/cp/a20230308ren/page.shtml?rzwyID=72a2a506"><img src="//static.gametalk.qq.com/image/25/1778760392_9e056dd32014e6c5fd3ba9b2ea5fd07f.png" alt=""></a></li><li class="swiper-slide swiper-slide-active" style="width: 337px;"><a href="https://hyrz.qq.com/cp/a20230308ren/page.shtml?rzwyID=72a2a538"><img src="//static.gametalk.qq.com/image/25/1778760380_6dfe98b1cc81508868b44db32a175b90.png" alt=""></a></li><li class="swiper-slide swiper-slide-next" style="width: 337px;"><a href="https://hyrz.qq.com/cp/a20230308ren/page.shtml?rzwyID=72a2a500"><img src="//static.gametalk.qq.com/image/25/1778760369_06ae914f00f1a535169f2d6df2dce94e.png" alt=""></a></li></ul><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div> <a href="javascript:;" class="content-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-d402d7cf138cc10ac" aria-disabled="false"></a> <a href="javascript:;" class="content-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-d402d7cf138cc10ac" aria-disabled="false"></a> <div class="content-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 4" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span></div></div> <div class="content-news"><ul class="content-news-head"><li class="active">最新</li><li class="">公告</li><li class="">攻略</li><li class="">赛事</li><li class="">体验服</li></ul> <ul class="content-news-item"><li><a href="//hyrz.qq.com/m/m202003/newsDetails.html?type=News&amp;Id=18785492"><!----> <div><p>5月15日更新公告，纲手[传说中的三忍]登场！</p> <em>05-14</em></div></a></li><li><a href="//hyrz.qq.com/m/m202003/newsDetails.html?type=News&amp;Id=18783693"><span>最新</span> <div><p>5月14日新版本停机公告</p> <em>05-11</em></div></a></li><li><a href="//hyrz.qq.com/m/m202003/newsDetails.html?type=News&amp;Id=18781585"><span>最新</span> <div><p>5月8日更新公告，疾风传周年庆活动即将开启</p> <em>05-07</em></div></a></li><li><a href="//hyrz.qq.com/m/m202003/newsDetails.html?type=News&amp;Id=18778133"><span>最新</span> <div><p>5月1日更新公告，漂泊主题活动精彩继续</p> <em>05-01</em></div></a></li><li><a href="//hyrz.qq.com/m/m202003/newsDetails.html?type=News&amp;Id=18773103"><span>最新</span> <div><p>4月24日更新公告，志村团藏「漂泊寻者」即将登场！</p> <em>04-24</em></div></a></li><li><a href="//hyrz.qq.com/m/m202003/newsDetails.html?type=News&amp;Id=18768907"><span>最新</span> <div><p>4月17日更新公告，2026《火影忍者》手游春季赛武斗赛赛道预选赛即将开启</p> <em>04-16</em></div></a></li></ul> <a href="//hyrz.qq.com/m/m202003/newsList.html" class="content-news-more">查看更多资讯内容 &gt;</a></div></div> <div class="page-title"><strong>内容中心</strong> <span>Content Center</span> <a href="//hyrz.qq.com/m/m202003/newsList.html?tab=2">查看更多 &gt;</a></div> <ul class="content-item"><li><a href="//hyrz.qq.com/m/m202003/newsDetails.html?type=News&amp;Id=18777394"><div><img src="//static.gametalk.qq.com/image/25/1777455871_f8375672c9c4721692fec82704e8270f.png" alt=""></div> <p>【新忍爆料】怎么也逃不出“花花的世界”！夕日红「少女」即将登场！</p></a></li><li><a href="//hyrz.qq.com/m/m202003/newsDetails.html?type=News&amp;Id=18775694"><div><img src="//static.gametalk.qq.com/image/25/1777276135_039e1dbb8e6e6fd57c08e2f1b43a680b.png" alt=""></div> <p>【新忍爆料】用极小的毒虫将敌人逼上绝路，油女取根「漂泊寻者」即将登场！</p></a></li><li><a href="//hyrz.qq.com/m/m202003/newsDetails.html?type=News&amp;Id=18771615"><div><img src="//static.gametalk.qq.com/image/25/1777276048_3028a7bcbfff2dd7c94fe12ebe45e74d.png" alt=""></div> <p>【新忍爆料】藏于阴影之下，冷彻的野心家！志村团藏「漂泊寻者」即将登场！</p></a></li><li><a href="//hyrz.qq.com/m/m202003/newsDetails.html?type=News&amp;Id=18759254"><div><img src="//static.gametalk.qq.com/image/25/1775034444_0c0edc3e1b901c29a03dbf689f83baf1.jpg" alt=""></div> <p>【新忍爆料】暗藏狂气的雾隐怪人，干柿鬼鲛「青年」即将登场！</p></a></li></ul></div> <div class="ninja page"><div class="ninja-swiper"><div class="swiper swiper-fade swiper-initialized swiper-horizontal swiper-pointer-events swiper-ios swiper-backface-hidden"><ul class="swiper-wrapper" id="swiper-wrapper-818dc1b4f1a10066d" aria-live="polite"><li class="swiper-slide swiper-slide-visible swiper-slide-active" style="width: 375px; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div class="ninja-box"><div class="ninja-image"><img src="//static.gametalk.qq.com/image/25/1778582257_76aa58bcf93a72ee8e7a2b4c333eb3b8.png" alt=""> <div class="page-title"><strong>忍者介绍</strong> <span>Ninja Introduction</span></div></div> <div class="ninja-name"><strong>漩涡鸣人·自来也</strong> <span>「修行之旅」</span></div> <div class="ninja-desc"><span>快速上手</span> <p>鸣人与自来也二人可以切换作战，任意一人战败后还会进入暴走模式进一步强化技能。</p></div> <div class="ninja-skill"><ul class="ninja-skill-icon samll"><li class="active"><img src="//game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90537/jn01.png" alt=""> <dl class=""><dd class="active">
+                                                            鸣人</dd><dd class="">
+                                                            自来也</dd><dd class="">
+                                                            暴走·鸣人</dd><dd class="">
+                                                            暴走·自来也</dd></dl></li><li class=""><img src="//game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90537/jn11.png" alt=""> <dl class=""><dd class="active">
+                                                            鸣人</dd><dd class="">
+                                                            自来也</dd><dd class="">
+                                                            暴走·鸣人</dd><dd class="">
+                                                            暴走·自来也</dd></dl></li><li class=""><img src="//game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90537/jn21.png" alt=""> <dl class=""><dd class="active">
+                                                            鸣人</dd><dd class="">
+                                                            自来也</dd><dd class="">
+                                                            暴走·鸣人</dd><dd class="">
+                                                            暴走·自来也</dd></dl></li><li class=""><img src="//game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90537/jn31.png" alt=""> <dl class=""><dd class="active">
+                                                            鸣人</dd><dd class="">
+                                                            自来也</dd><dd class="">
+                                                            连携奥义</dd><dd class="">
+                                                            暴走·鸣人</dd><dd class="">
+                                                            暴走·自来也</dd></dl></li><li class=""><img src="//game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90537/jn41.png" alt=""> <dl class=""><dd class="active">
+                                                            师徒连携</dd><dd class="">
+                                                            暴走</dd></dl></li></ul> <div class="ninja-skill-box"><strong>普攻
+                                                    -
+                                                    鸣人
+                                                </strong> <p>
+                                                    鸣人登场时普攻共4A。1A出拳，2A连续挥拳，3A后撤，召唤影分身上踢后分身消失，4A本体跃起用背包狠狠砸向敌人。
+                                                    <!----></p> <div id="ninja-skill-video"><a href="javascript:;"><img src="//game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90537/v01.jpg" alt=""></a></div></div></div></div></li><li class="swiper-slide swiper-slide-next" style="width: 375px; opacity: 0; transform: translate3d(-375px, 0px, 0px);"><div class="ninja-box"><div class="ninja-image"><img src="//static.gametalk.qq.com/image/25/1778566659_806bdca0120524883d622acaca2ef148.jpg" alt=""> <div class="page-title"><strong>忍者介绍</strong> <span>Ninja Introduction</span></div></div> <div class="ninja-name"><strong>纲手</strong> <span>「传说中的三忍」</span></div> <div class="ninja-desc"><span>快速上手</span> <p>传说纲手的普攻能在进攻时灵活释放去搭配技能去获得先手，加上一点气运加成就能在短时间内打出极其恐怖的伤害。</p></div> <div class="ninja-skill"><ul class="ninja-skill-icon samll"><li class="active"><img src="//game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90523/jn01.png" alt=""> <dl class=""><dd class="active">
+                                                            常态</dd><dd class="">
+                                                            百豪</dd></dl></li><li class=""><img src="//game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90523/jn11.png" alt=""> <dl class=""><dd class="active">
+                                                            常态</dd></dl></li><li class=""><img src="//game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90523/jn21.png" alt=""> <dl class=""><dd class="active">
+                                                            常态</dd></dl></li><li class=""><img src="//game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90523/jn31.png" alt=""> <dl class=""><dd class="active">
+                                                            小奥义一</dd><dd class="">
+                                                            小奥义二</dd><dd class="">
+                                                            奥义</dd></dl></li><li class=""><img src="//game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90523/jn41.png" alt=""> <dl class=""><dd class="active">
+                                                            跳A</dd><dd class="">
+                                                            大奖连击</dd><dd class="">
+                                                            专属通灵</dd></dl></li></ul> <div class="ninja-skill-box"><strong>普攻
+                                                    -
+                                                    常态
+                                                </strong> <p>
+                                                    传说三忍纲手的普攻共7A，1A左手直拳，2A勾拳，3A左手架开后接突进右冲拳，4A跺脚震起碎石并逐一打出，若命中敌人，则5A会瞬身至敌人下方抬腿侧踢，6A跃起下劈，7A抓取敌人摔在地面。
+                                                    <!----></p> <div id="ninja-skill-video"><a href="javascript:;"><img src="//game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90523/v01.jpg" alt=""></a></div></div></div></div></li><li class="swiper-slide" style="width: 375px; opacity: 0; transform: translate3d(-750px, 0px, 0px);"><div class="ninja-box"><div class="ninja-image"><img src="//static.gametalk.qq.com/image/25/1778053436_f0a71aa3f591a08a2dce7eb00fa20c96.jpg" alt=""> <div class="page-title"><strong>忍者介绍</strong> <span>Ninja Introduction</span></div></div> <div class="ninja-name"><strong>夕日红</strong> <span>「少女」</span></div> <div class="ninja-desc"><span>快速上手</span> <p>少女夕日红拥有很强的控制和拉扯能力，通过特殊机制可以频繁释放强化技能压制对手。</p></div> <div class="ninja-skill"><ul class="ninja-skill-icon samll"><li class="active"><img src="//game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90518/jn01.png" alt=""> <dl class=""><dd class="active">
+                                                            常态</dd></dl></li><li class=""><img src="//game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90518/jn11.png" alt=""> <dl class=""><dd class="active">
+                                                            常态</dd><dd class="">
+                                                            强化</dd><dd class="">
+                                                            组合技</dd></dl></li><li class=""><img src="//game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90518/jn21.png" alt=""> <dl class=""><dd class="active">
+                                                            常态</dd><dd class="">
+                                                            强化</dd><dd class="">
+                                                            组合技</dd></dl></li><li class=""><img src="//game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90518/jn31.png" alt=""> <dl class=""><dd class="active">
+                                                            奥义</dd></dl></li><li class=""><img src="//game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90518/jn41.png" alt=""> <dl class=""><dd class="active">
+                                                            强化</dd></dl></li></ul> <div class="ninja-skill-box"><strong>普攻
+                                                    -
+                                                    常态
+                                                </strong> <p>
+                                                    夕日红[少女]的普攻共5A，1A苦无横斩，2A突进穿过敌人后下踢，3A苦无上挑敌人，4A召唤分身向上斩击，5A分身旋转攻击敌人，若4A时上拉摇杆，则会由本体进行攻击。
+                                                    <!----></p> <div id="ninja-skill-video"><a href="javascript:;"><img src="//game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90518/v01.jpg" alt=""></a></div></div></div></div></li><li class="swiper-slide" style="width: 375px; opacity: 0; transform: translate3d(-1125px, 0px, 0px);"><div class="ninja-box"><div class="ninja-image"><img src="//static.gametalk.qq.com/image/25/1778053761_9f6a044f2357c58d1de126928ab7b36b.jpg" alt=""> <div class="page-title"><strong>忍者介绍</strong> <span>Ninja Introduction</span></div></div> <div class="ninja-name"><strong>油女取根</strong> <span>「漂泊寻者」</span></div> <div class="ninja-desc"><span>快速上手</span> <p>漂泊取根的磷坏虫中毒需要短时间累计伤害触发，实战中需要保证强化一技能的命中率以让自身能更长时间处于强化状态。</p></div> <div class="ninja-skill"><ul class="ninja-skill-icon samll"><li class="active"><img src="//game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90536/jn01.png" alt=""> <dl class=""><dd class="active">
+                                                            常态</dd><dd class="">
+                                                            强化</dd></dl></li><li class=""><img src="//game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90536/jn11.png" alt=""> <dl class=""><dd class="active">
+                                                            常态</dd><dd class="">
+                                                            强化</dd></dl></li><li class=""><img src="//game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90536/jn21.png" alt=""> <dl class=""><dd class="active">
+                                                            常态</dd></dl></li><li class=""><img src="//game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90536/jn31.png" alt=""> <dl class=""><dd class="active">
+                                                            奥义</dd></dl></li><li class=""><img src="//game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90536/jn41.png" alt=""> <dl class=""><dd class="active">
+                                                            猛毒活性化</dd></dl></li></ul> <div class="ninja-skill-box"><strong>普攻
+                                                    -
+                                                    常态
+                                                </strong> <p>
+                                                    漂泊取根的常态普攻共4A，前2A连续出拳平推，3A扫腿击飞，4A短暂蓄力后突进打出带有毒尘的一掌，命中后敌人将吸入部分毒虫，同时为敌人增加一定（猛毒活性化）进度条。
+                                                    <!----></p> <div id="ninja-skill-video"><a href="javascript:;"><img src="//game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90536/v01.jpg" alt=""></a></div></div></div></div></li></ul><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div></div> <div class="ninja-pagination"><div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-ios swiper-backface-hidden swiper-thumbs"><ul class="swiper-wrapper" id="swiper-wrapper-ae19b19e78ead3ba" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);"><li class="swiper-slide swiper-slide-visible swiper-slide-active swiper-slide-thumb-active" role="group" aria-label="1 / 4" style="width: 86.25px;"><div><i class="ninja-icon ninja-icon-S"></i> <img alt="" src="//static.gametalk.qq.com/image/25/1778743404_3315457eba4b799ac08e62937da4d44c.png"> <p><strong>漩涡鸣人·自来也</strong> <span>「修行之旅」</span></p></div></li><li class="swiper-slide swiper-slide-visible swiper-slide-next" role="group" aria-label="2 / 4" style="width: 86.25px;"><div><i class="ninja-icon ninja-icon-S"></i> <img alt="" src="//static.gametalk.qq.com/image/25/1778577476_2838387878226214d28356666b097a0c.png"> <p><strong>纲手</strong> <span>「传说中的三忍」</span></p></div></li><li class="swiper-slide swiper-slide-visible" role="group" aria-label="3 / 4" style="width: 86.25px;"><div><i class="ninja-icon ninja-icon-B"></i> <img alt="" src="//static.gametalk.qq.com/image/25/1778053448_99caaf43991ecf26df83012c28e0e429.png"> <p><strong>夕日红</strong> <span>「少女」</span></p></div></li><li class="swiper-slide swiper-slide-visible" role="group" aria-label="4 / 4" style="width: 86.25px;"><div><i class="ninja-icon ninja-icon-B"></i> <img alt="" src="//static.gametalk.qq.com/image/25/1778053770_c381b9ec82d293535efb87e8b3438be0.png"> <p><strong>油女取根</strong> <span>「漂泊寻者」</span></p></div></li></ul><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div> <a href="//hyrz.qq.com/cp/a20230308ren/m/index.shtml">查看更多</a></div></div> <div class="player page"><div class="page-title"><strong>新人福利</strong> <span>Newcomer Benefits</span></div> <div class="player-swiper"><div class="swiper swiper-fade swiper-initialized swiper-horizontal swiper-pointer-events swiper-ios swiper-backface-hidden"><ul class="swiper-wrapper" id="swiper-wrapper-dcb36d42ef43c89f" aria-live="off" style="transition-duration: 300ms;"><li class="swiper-slide swiper-slide-prev" style="width: 375px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 300ms;"><div><img src="//static.gametalk.qq.com/image/25/1778293381_799bad5a3b514f096e69bbc4a7896cd9.jpg" alt=""> <img src="//static.gametalk.qq.com/image/25/1778299276_10fb15c77258a991b0028080a64fb42d.png" alt=""></div></li><li class="swiper-slide swiper-slide-visible swiper-slide-active" style="width: 375px; opacity: 1; transform: translate3d(-375px, 0px, 0px); transition-duration: 300ms;"><div><img src="//static.gametalk.qq.com/image/25/1778293408_f3ccdd27d2000e3f9255a7e3e2c48800.jpg" alt=""> <img src="//static.gametalk.qq.com/image/25/1778299296_4a47a0db6e60853dedfcfdf08a5ca249.png" alt=""></div></li><li class="swiper-slide swiper-slide-next" style="width: 375px; opacity: 0; transform: translate3d(-750px, 0px, 0px); transition-duration: 300ms;"><div><img src="//static.gametalk.qq.com/image/25/1778293424_156005c5baf40ff51a327f1c34f2975b.jpg" alt=""> <img src="//static.gametalk.qq.com/image/25/1778299312_fb5c81ed3a220004b71069645f112867.png" alt=""></div></li><li class="swiper-slide" style="width: 375px; opacity: 0; transform: translate3d(-1125px, 0px, 0px); transition-duration: 300ms;"><div><img src="//static.gametalk.qq.com/image/25/1778293440_d0096ec6c83575373e3a21d129ff8fef.jpg" alt=""> <img src="//static.gametalk.qq.com/image/25/1778730230_7c185fb73257f8cb338a2ef37578fad4.png" alt=""></div></li></ul><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div></div> <div class="player-pagination"><div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-ios swiper-backface-hidden swiper-thumbs"><ul class="swiper-wrapper" id="swiper-wrapper-936fe842fda4df24" aria-live="polite" style="transition-duration: 300ms;"><li class="swiper-slide swiper-slide-visible swiper-slide-active" style="width: 93.75px;"><div><img src="//static.gametalk.qq.com/image/25/1778293381_799bad5a3b514f096e69bbc4a7896cd9.jpg" alt=""> <img src="//static.gametalk.qq.com/image/25/1778299276_10fb15c77258a991b0028080a64fb42d.png" alt=""></div></li><li class="swiper-slide swiper-slide-visible swiper-slide-next swiper-slide-thumb-active" style="width: 93.75px;"><div><img src="//static.gametalk.qq.com/image/25/1778293408_f3ccdd27d2000e3f9255a7e3e2c48800.jpg" alt=""> <img src="//static.gametalk.qq.com/image/25/1778299296_4a47a0db6e60853dedfcfdf08a5ca249.png" alt=""></div></li><li class="swiper-slide swiper-slide-visible" style="width: 93.75px;"><div><img src="//static.gametalk.qq.com/image/25/1778293424_156005c5baf40ff51a327f1c34f2975b.jpg" alt=""> <img src="//static.gametalk.qq.com/image/25/1778299312_fb5c81ed3a220004b71069645f112867.png" alt=""></div></li><li class="swiper-slide swiper-slide-visible" style="width: 93.75px;"><div><img src="//static.gametalk.qq.com/image/25/1778293440_d0096ec6c83575373e3a21d129ff8fef.jpg" alt=""> <img src="//static.gametalk.qq.com/image/25/1778730230_7c185fb73257f8cb338a2ef37578fad4.png" alt=""></div></li></ul><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div></div></div> <div class="match page"><div class="page-title"><strong>赛事中心</strong> <span>Competition Center</span></div> <div class="match-box"><div class="match-cover"><div><a href="https://hyrz.qq.com/cp/a20260327cjs/"><img alt="" src="//static.gametalk.qq.com/image/25/1778141089_5291e4b5262d8d70ccbebaae906e5712.png"></a></div></div> <div class="match-news"><div class="match-title"><p>最新资讯</p> <a href="//hyrz.qq.com/m/m202003/newsList.html?tab=3">查看更多 &gt;</a></div> <div class="match-news-hot"><a href="https://hyrz.qq.com/cp/a20260327cjs/"><strong>2026火影忍者手游春季赛</strong> <div><p>4月-6月</p> <!----></div></a></div> <ul class="match-news-item"><li><a href="//hyrz.qq.com/m/m202003/newsDetails.html?type=News&amp;Id=18757903"><p>2026火影忍者手游赛事 选手参赛行为规范条例（2026年3月）</p> <span>03-30</span></a></li><li><a href="//hyrz.qq.com/m/m202003/newsDetails.html?type=News&amp;Id=18755130"><p>2026火影忍者手游春季赛 线上赛规则</p> <span>03-25</span></a></li><li><a href="//hyrz.qq.com/m/m202003/newsDetails.html?type=News&amp;Id=18695081"><p>2025《火影忍者》手游年度总决赛忍者池公布！</p> <span>11-17</span></a></li><li><a href="//hyrz.qq.com/m/m202003/newsDetails.html?type=News&amp;Id=18658390"><p>2025火影忍者手游秋季赛 线上赛规则</p> <span>09-05</span></a></li><li><a href="//hyrz.qq.com/m/m202003/newsDetails.html?type=News&amp;Id=18643762"><p>2025《火影忍者》手游秋季赛忍者池公布！</p> <span>08-06</span></a></li></ul></div> <div class="match-video"><div class="match-title"><p>赛事视频</p> <a href="//hyrz.qq.com/m/m202003/newsList.html?tab=4">查看更多 &gt;</a></div> <ul class="match-video-item"><li><a href="javascript:;"><div><img src="//static.gametalk.qq.com/image/25/1768189100_b3b8126a128e375920f5f715bf46d23c.png" alt=""></div> <p>2025火影忍者手游年度总决赛 武斗赛冠军赛 杜康 VS 雷姆</p></a></li><li><a href="javascript:;"><div><img src="//static.gametalk.qq.com/image/25/1768142987_8266e4bfeda1bd42d8f9794eb4ea0a13.png" alt=""></div> <p>2025火影忍者手游年度总决赛 武斗赛败者组决赛 土豆 VS 雷姆</p></a></li><li><a href="javascript:;"><div><img src="//static.gametalk.qq.com/image/25/1768142975_09dd8c2662b96ce14928333f055c5580.png" alt=""></div> <p>2025火影忍者手游年度总决赛 武斗赛胜者组决赛 杜康 VS 雷姆</p></a></li><li><a href="javascript:;"><div><img src="//static.gametalk.qq.com/image/25/1768142959_10fb15c77258a991b0028080a64fb42d.png" alt=""></div> <p>2025火影忍者手游年度总决赛 无差别冠军赛 小豪 VS 荒芜</p></a></li></ul></div></div></div></div></div>
+    <!-- 
+    要引用 //hyrz.qq.com/m2026/css/common.css
+-->
+<script>
+    (function () {
+        var html = `
+            <div class="footer-logi">
+                <p>
+                    <img src="//game.gtimg.cn/images/hyrz/m/m202003/footer.png" alt=""> 
+                </p>
+                <p>\u00a9 2002 MASASHI KISHIMOTO / 2007 SHIPPUDEN All Rights Reserved.</p>
+                <p>\u00a9 2002 MASASHI KISHIMOTO / 2017 BORUTO All Rights Reserved.</p>
+                <p>\u00a9 Bandai Namco Entertainment Inc.</p>
+            </div>
+        `
+        setTimeout(function () {
+            var container = document.getElementById('afooter');
+            if (container) {
+                container.insertAdjacentHTML('afterbegin', html);
+            }
+        }, 1500);
+    })()
+</script>
+
+    <!-- 
+    要引用 //hyrz.qq.com/m2026/css/common.css
+-->
+<div class="dialog">
+    <!-- 下载注册奖励弹窗 -->
+    <div class="dia" id="reward">
+        <div class="dia-box">
+            <a href="javascript:closeDialog();" class="dia-close">×</a>
+            <div class="dia-title">
+                <p>官网下载注册奖励</p>
+            </div>
+            <div class="dia-reward dia-auto">
+                <ul class="dia-reward-item">
+                    <li>
+                        <img src="//game.gtimg.cn/images/hyrz/m2026/reward/jb.png" alt="">
+                        <p>羁绊之卷×5</p>
+                    </li>
+                    <li>
+                        <img src="//game.gtimg.cn/images/hyrz/m2026/reward/sw.png" alt="">
+                        <p>声望×200</p>
+                    </li>
+                    <li>
+                        <img src="//game.gtimg.cn/images/hyrz/m2026/reward/tyk.png" alt="">
+                        <p>随机A忍<br>体验卡（1天）</p>
+                    </li>
+                    <li>
+                        <img src="//game.gtimg.cn/images/hyrz/m2026/reward/tb.png" alt="">
+                        <p>铜币×18888</p>
+                    </li>
+                </ul>
+                <div class="dia-reward-tips">
+                    <p>是否确认领取以上下载注册奖励</p>
+                    <div class="dia-btn">
+                        <a href="javascript:unLogin();" id="btn-receive">立即领取</a>
+                    </div>
+                </div>
+                <div class="dia-reward-rule">
+                    <strong>活动规则</strong>
+                    <ol>
+                        <li>1、15天内下载游戏并注册角色的新玩家，在官网登录并绑定角色后，即可领取官网新人下载礼包；</li>
+                        <li>2、点击“立即领取”按钮，显示领取成功后，请及时在游戏内邮箱查收；</li>
+                        <li>3、所有礼包物品均需下载游戏并创建角色后才能领取；</li>
+                        <li>4、如果遇到礼包领取问题，可拨打在线客服电话：0755-86925388；或前往游戏内/公众号的客服专区进行反馈。</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 登录弹窗 -->
+    <div class="dia" id="diaLogin">
+        <div class="dia-box">
+            <a href="javascript:closeDialog();" class="dia-close">×</a>
+            <div class="dia-title">
+                <p>请选择登录方式</p>
+            </div>
+            <ul class="dia-login dia-auto">
+                <li onclick="hy.goToQQ();">
+                    <img src="//game.gtimg.cn/images/hyrz/m2026/dia-qq.png" alt="">
+                    <p>QQ登录</p>
+                </li>
+                <li onclick="TGDialogS('goWx');">
+                    <img src="//game.gtimg.cn/images/hyrz/m2026/dia-wechat.png" alt="">
+                    <p>微信登录</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 绑定角色 -->
+    <div class="dia" id="hyRecentList">
+        <div class="dia-box">
+            <a href="javascript:closeDialog();" class="dia-close">×</a>
+            <div class="dia-title">
+                <p>请选择登录的角色</p>
+            </div>
+            <div class="dia-binding dia-auto">
+                <ul class="dia-binding-item" id="hyRecentUl">
+                    <li>
+                        <div>
+                            <p class="">@area@@plat@@partition@区@partitionName@</p>
+                            <span>@roleName@</span>
+                        </div>
+                        <a href="javascript:;"></a>
+                    </li>
+                    <!-- <li class="active">
+                        <div>
+                            <p class="">安卓QQ4572-极·岩柱枪</p>
+                            <span>角色名称</span>
+                        </div>
+                        <a href="javascript:;"></a>
+                    </li>
+                    <li>
+                        <div>
+                            <p class="">iOSQQ900-神乐心眼</p>
+                            <span>角色名称</span>
+                        </div>
+                        <a href="javascript:;"></a>
+                    </li>
+                    <li>
+                        <div>
+                            <p class="">iOSQQ900-神乐心眼</p>
+                            <span>角色名称</span>
+                        </div>
+                        <a href="javascript:;"></a>
+                    </li>
+                    <li>
+                        <div>
+                            <p class="">iOSQQ900-神乐心眼</p>
+                            <span>角色名称</span>
+                        </div>
+                        <a href="javascript:;"></a>
+                    </li>
+                    <li>
+                        <div>
+                            <p class="">iOSQQ900-神乐心眼</p>
+                            <span>角色名称</span>
+                        </div>
+                        <a href="javascript:;"></a>
+                    </li>
+                    <li>
+                        <div>
+                            <p class="">iOSQQ900-神乐心眼</p>
+                            <span>角色名称</span>
+                        </div>
+                        <a href="javascript:;"></a>
+                    </li>
+                    <li>
+                        <div>
+                            <p class="">iOSQQ900-神乐心眼</p>
+                            <span>角色名称</span>
+                        </div>
+                        <a href="javascript:;"></a>
+                    </li> -->
+                </ul>
+                <div class="dia-binding-tips">
+                    <div>
+                        <input type="checkbox" checked="" id="PIPInfoV2" class="milo-PIPInfo">
+                    </div>
+                    <p>我同意授权本活动页面获取我的账号与平台信息(操作系统/登录平台/游戏区服/角色昵称等)用于活动发奖、数据查询</p>
+                </div>
+            </div>
+            <div class="dia-btn">
+                <a href="javascript:TGDialogS('hyRoleSelector');" class="gray">绑定其他角色</a>
+                <a href="javascript:;" id="hyRecentListConfirm">确认绑定</a>
+            </div>
+        </div>
+    </div>
+    <!-- 绑定其他角色 -->
+    <div class="dia" id="hyRoleSelector">
+        <div class="dia-box">
+            <a href="javascript:closeDialog();" class="dia-close">×</a>
+            <div class="dia-title">
+                <p>请选择角色区服</p>
+            </div>
+            <div class="dia-bind dia-auto">
+                <ul>
+                    <li>
+                        <label for="">平台：</label>
+                        <select class="" name="" id="sel_channel">
+                            <option value="">请选择平台</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="">系统：</label>
+                        <select class="" name="" id="sel_system">
+                            <option value="">请选择系统</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="">大区：</label>
+                        <select class="" name="" id="sel_area">
+                            <option value="">请选择大区</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="">角色：</label>
+                        <select class="" name="" id="sel_role">
+                            <option value="">请选择角色</option>
+                        </select>
+                    </li>
+                    <li class="milo-PIPContainer">
+                        <div>
+                            <input type="checkbox" checked="" id="PIPInfo" class="milo-PIPInfo">
+                        </div>
+                        <p>我同意授权本活动页面获取我的账号与平台信息(操作系统/登录平台/游戏区服/角色昵称等)用于活动发奖、数据查询</p>
+                    </li>
+                </ul>
+                <p class="dia-bind-tips" id="milo-error-message">*请勾选上方授权信息</p>
+                <div class="dia-btn">
+                    <a href="javascript:;" id="hyRoleSelectorConfirm">确认绑定</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 不符合领奖要求 -->
+    <div class="dia" id="end-noReceive">
+        <div class="dia-box">
+            <a href="javascript:closeDialog();" class="dia-close">×</a>
+            <div class="dia-title">
+                <p>温馨提示</p>
+            </div>
+            <div class="dia-intro dia-auto">
+                <p>当前角色不符合领取要求</p>
+                <p>请切换角色后重试</p>
+            </div>
+            <div class="dia-btn">
+                <a href="javascript:closeDialog();">我知道了</a>
+            </div>
+        </div>
+    </div>
+    <!-- 领取成功 -->
+    <div class="dia" id="dia-getPrize">
+        <div class="dia-box">
+            <a href="javascript:closeDialog();" class="dia-close">×</a>
+            <div class="dia-title">
+                <p>恭喜您!获得:</p>
+            </div>
+            <div class="dia-success dia-auto">
+                <ul class="dia-reward-item">
+                    <li>
+                        <img src="//game.gtimg.cn/images/hyrz/web2026/reward/jb.png" alt="">
+                        <p>羁绊之卷×5</p>
+                    </li>
+                    <li>
+                        <img src="//game.gtimg.cn/images/hyrz/web2026/reward/sw.png" alt="">
+                        <p>声望×200</p>
+                    </li>
+                    <li>
+                        <img src="//game.gtimg.cn/images/hyrz/web2026/reward/tyk.png" alt="">
+                        <p>随机A忍<br>体验卡（1天）</p>
+                    </li>
+                    <li>
+                        <img src="//game.gtimg.cn/images/hyrz/web2026/reward/tb.png" alt="">
+                        <p>铜币×18888</p>
+                    </li>
+                </ul>
+                <p class="dia-success-tips">奖励将发送至游戏邮箱</p>
+            </div>
+            <div class="dia-btn">
+                <a href="https://hyrz.qq.com/zlkdatasys/mct/proj_314/download.shtml?media=10000001&amp;back=cururl">打开游戏</a>
+            </div>
+        </div>
+    </div>
+    <!-- 没有角色 -->
+    <div class="dia" id="end-noDown">
+        <div class="dia-box">
+            <a href="javascript:closeDialog();" class="dia-close">×</a>
+            <div class="dia-title">
+                <p>温馨提示</p>
+            </div>
+            <div class="dia-intro dia-auto">
+                <p>您还没有角色哦~</p>
+                <p>立即下载，加入《火影忍者》手游!</p>
+            </div>
+            <div class="dia-btn">
+                <a href="https://hyrz.qq.com/zlkdatasys/mct/d/play.shtml">前往木叶</a>
+            </div>
+        </div>
+    </div>
+    <!-- 已经领取 -->
+    <div class="dia" id="diaClaimed">
+        <div class="dia-box">
+            <a href="javascript:closeDialog();" class="dia-close">×</a>
+            <div class="dia-title">
+                <p>温馨提示</p>
+            </div>
+            <div class="dia-intro dia-auto">
+                <p>您已经领取过了~</p>
+            </div>
+            <!-- <div class="dia-btn">
+                <a href="javascript:closeDialog();" class="qwmy">关闭</a>
+            </div> -->
+        </div>
+    </div>
+    <!-- 视频 -->
+    <div class="dia" id="txplay">
+        <div class="dia-box dia-video">
+            <a href="javascript:closeDialog(),txPlay.close();" class="dia-close">×</a>
+            <div class="dia-video-box" id="txplayBox">
+
+            </div>
+        </div>
+    </div>
+    <!-- 快手 -->
+    <div class="dia" id="codeks">
+        <div class="dia-box">
+            <a href="javascript:closeDialog();" class="dia-close">×</a>
+            <div class="dia-code dia-auto">
+                <img src="//game.gtimg.cn/images/hyrz/m2026/code-ks.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- 情报社 -->
+    <div class="dia" id="codeqbs">
+        <div class="dia-box">
+            <a href="javascript:closeDialog();" class="dia-close">×</a>
+            <div class="dia-code dia-auto">
+                <img src="//game.gtimg.cn/images/hyrz/m2026/topnav-soclal.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- 情报社微信 -->
+    <div class="dia" id="codeqbswx">
+        <div class="dia-box">
+            <a href="javascript:closeDialog();" class="dia-close">×</a>
+            <div class="dia-code dia-auto">
+                <img src="//game.gtimg.cn/images/hyrz/m2026/code-wx.jpg" alt="">
+                <p>长按保存二维码至微信客户端识别</p>
+            </div>
+        </div>
+    </div>
+    <!-- 情报社qq -->
+    <div class="dia" id="codeqbsqq">
+        <div class="dia-box">
+            <a href="javascript:closeDialog();" class="dia-close">×</a>
+            <div class="dia-code dia-auto">
+                <img src="//game.gtimg.cn/images/hyrz/m2026/code-qq.jpg" alt="">
+                <p>长按保存二维码至QQ客户端识别</p>
+            </div>
+        </div>
+    </div>
+    <!-- 客服专线 -->
+    <div class="dia" id="phone">
+        <div class="dia-box">
+            <a href="javascript:closeDialog();" class="dia-close">×</a>
+            <div class="dia-title">
+                <p>火影忍者手游客服专线</p>
+            </div>
+            <div class="dia-phone dia-auto">
+                <p>
+                    <img src="//game.gtimg.cn/images/hyrz/m2026/phone.png" alt="">
+                    <a href="tel:0755-8692 5388">0755-8692 5388</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- 适龄提示 -->
+    <div class="dia" id="age">
+        <div class="dia-box">
+            <a href="javascript:closeDialog();" class="dia-close">×</a>
+            <div class="dia-title">
+                <p>适龄提示</p>
+            </div>
+            <div class="dia-age dia-auto">
+                <p>1、本游戏是一款玩法相对复杂的角色扮演类游戏，适用于年满12周岁及以上的用户，建议未成年人在家长监护下使用游戏产品。</p>
+                <p>2、本游戏基于知名动漫《火影忍者》改编，画面为2D动漫风格，剧情叙事宏大，人物关系丰富，有丰富的音效来烘托游戏氛围。游戏有丰富多样的玩法，包含角色养成和竞技等，需要投入较多时间和精力。游戏中有基于语音和文字的陌生人社交系统，但社交系统的管理遵循相关法律法规。
+                </p>
+                <p>3、根据国家相关要求，游戏中有用户实名认证系统，未通过实名认证的用户不可进入游戏；认证为未成年人的用户除周五、周六、周日及法定节假日每日20时至21时外其他时间均不可进入游戏。</p>
+                <p>游戏中部分玩法和道具需要付费。根据腾讯健康系统管理规定，认证为未成年人的用户将接受以下管理：</p>
+                <p>未满12周岁的用户不能付费；12周岁以上未满16周岁的未成年人用户，单次充值金额不得超过50元人民币，每月充值金额累计不得超过200元人民币；16周岁以上的未成年人用户，单次充值金额不得超过100元人民币，每月充值金额累计不得超过400元人民币。
+                </p>
+                <p>4、游戏提供了丰富的社交系统，包括组织、组队等，玩家之间可以互相交流，互相配合，共同完成游戏任务，有助于促进玩家的社会交流，维持良好的社群关系。</p>
+            </div>
+        </div>
+    </div>
+    <!-- 提示保存图片到微信扫码打开 -->
+    <div class="dia" id="goWx">
+        <div class="dia-box">
+            <a href="javascript:closeDialog();" class="dia-close">×</a>
+            <div class="dia-title">
+                <p>温馨提示</p>
+            </div>
+            <div class="dia-gowx dia-auto">
+                <img src="//game.gtimg.cn/images/hyrz/m2026/code-href.png" alt="">
+                <p>长按保存二维码到微信扫一扫打开</p>
+            </div>
+        </div>
+    </div>
+    <!-- 通用提示弹窗 -->
+    <div class="dia" id="diaTips">
+        <div class="dia-box">
+            <a href="javascript:closeDialog();" class="dia-close">×</a>
+            <div class="dia-title">
+                <p>温馨提示</p>
+            </div>
+            <div class="dia-intro dia-auto">
+                <p id="textTips"></p>
+            </div>
+            <p class="dia-btn">
+                <a href="javascript:closeDialog();">确认</a>
+            </p>
+        </div>
+    </div>
+</div>
+<script crossorigin="anonymous" src="//ossweb-img.qq.com/images/js/mobile_bundle/util/zepto-all.js"></script>
+<!-- 活动引入 -->
+<script crossorigin="anonymous" src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+<script crossorigin="anonymous" src="//game.gtimg.cn/images/js/milo-next/latest/milo.min.js"></script>
+<script charset="utf8" src="//hyrz.qq.com/m2026/hy/hyCommon.js?v=2026051301"></script>
+<script charset="utf8" src="//hyrz.qq.com/m2026/hy/index.js"></script>
+<script>
+    // 跟导航，弹窗相关的JS都写到这里
+    function TGDialogS(e) {
+        showDialog.show({
+            id: e,
+            bgcolor: "#000",
+            opacity: 70
+        });
+        document.body.style.overflow = 'hidden';
+    }
+    function closeDialog() {
+        showDialog.hide()
+        document.body.style.overflow = 'auto';
+    }
+    function diaTips(msg) {
+        $('#textTips').text(msg)
+        TGDialogS('diaTips')
+    }
+    // TGDialogS('hyRoleSelector')
+    // diaTips('提示信息')
+
+    var txPlay = {
+        id: null,
+        player: null,
+        play: function (vid, id) {
+            this.id = id;
+            this.player = new Txplayer({
+                vid: vid,
+                containerId: id,
+                width: '100%',
+                height: '100%',
+                autoplay: true,
+            });
+        },
+        close: function () {
+            if (this.player) {
+                this.player.pause();
+                this.player.mute()
+            }
+            $('#' + this.id + '').html('')
+        }
+    }
+    $(document).on('click', '.topnav-item > ul > li', function () {
+        $(this).addClass('active').siblings().removeClass('active');
+    })
+</script>
+    <script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script><script src="//game.gtimg.cn/images/js/eas/eas.js"></script><div id="afooter"><footer class="foot"><p class="copyright_en">COPYRIGHT © 1998 - 2026 TENCENT.ALL RIGHTS RESERVED.</p><p class="copyright_zh">腾讯公司 版权所有</p></footer></div>
+    <script src="//game.gtimg.cn/images/js/fillnewsgicp/v1.4.js" charset="UTF-8"></script>
+    <script src="//ossweb-img.qq.com/images/js/vue_component/vue-2.2.6.min.js"></script>
+    <script src="//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/eas/eas.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/comm/showDialog.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+
+
+<iframe id="loginWxIframe" name="loginWxIframe" scrolling="no" frameborder="0" src="https://apps.game.qq.com/ams/logout_wx.html" style="display: none;"></iframe><iframe id="loginIframe" name="loginIframe" scrolling="no" frameborder="0" src="https://game.qq.com/act/logout.html?t=1" style="display: none;"></iframe></body></html>
