@@ -1,1 +1,57 @@
-{}
+{
+  "news": [
+    {
+      "title": "5月15日更新公告，纲手[传说中的三忍]登场！",
+      "date": "05-14",
+      "link": "https://hyrz.qq.com/m/m202003/newsDetails.html?type=News&Id=18785492"
+    },
+    {
+      "title": "5月14日新版本停机公告",
+      "date": "05-11",
+      "link": "https://hyrz.qq.com/m/m202003/newsDetails.html?type=News&Id=18783693"
+    },
+    {
+      "title": "5月8日更新公告，疾风传周年庆活动即将开启",
+      "date": "05-07",
+      "link": "https://hyrz.qq.com/m/m202003/newsDetails.html?type=News&Id=18781585"
+    },
+    {
+      "title": "5月1日更新公告，漂泊主题活动精彩继续",
+      "date": "05-01",
+      "link": "https://hyrz.qq.com/m/m202003/newsDetails.html?type=News&Id=18778133"
+    },
+    {
+      "title": "4月24日更新公告，志村团藏「漂泊寻者」即将登场！",
+      "date": "04-24",
+      "link": "https://hyrz.qq.com/m/m202003/newsDetails.html?type=News&Id=18773103"
+    },
+    {
+      "title": "4月17日更新公告，2026《火影忍者》手游春季赛武斗赛赛道预选赛即将开启",
+      "date": "04-16",
+      "link": "https://hyrz.qq.com/m/m202003/newsDetails.html?type=News&Id=18768907"
+    }
+  ],
+  "contentCenter": [
+    {
+      "title": "【新忍爆料】怎么也逃不出“花花的世界”！夕日红「少女」即将登场！",
+      "img": "https://static.gametalk.qq.com/image/25/1777455871_f8375672c9c4721692fec82704e8270f.png",
+      "link": "https://hyrz.qq.com/m/m202003/newsDetails.html?type=News&Id=18777394"
+    },
+    {
+      "title": "【新忍爆料】用极小的毒虫将敌人逼上绝路，油女取根「漂泊寻者」即将登场！",
+      "img": "https://static.gametalk.qq.com/image/25/1777276135_039e1dbb8e6e6fd57c08e2f1b43a680b.png",
+      "link": "https://hyrz.qq.com/m/m202003/newsDetails.html?type=News&Id=18775694"
+    },
+    {
+      "title": "【新忍爆料】藏于阴影之下，冷彻的野心家！志村团藏「漂泊寻者」即将登场！",
+      "img": "https://static.gametalk.qq.com/image/25/1777276048_3028a7bcbfff2dd7c94fe12ebe45e74d.png",
+      "link": "https://hyrz.qq.com/m/m202003/newsDetails.html?type=News&Id=18771615"
+    },
+    {
+      "title": "【新忍爆料】暗藏狂气的雾隐怪人，干柿鬼鲛「青年」即将登场！",
+      "img": "https://static.gametalk.qq.com/image/25/1775034444_0c0edc3e1b901c29a03dbf689f83baf1.jpg",
+      "link": "https://hyrz.qq.com/m/m202003/newsDetails.html?type=News&Id=18759254"
+    }
+  ],
+  "ninja": null
+}
