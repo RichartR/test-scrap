@@ -1,135 +1,219 @@
 /* 
- * Replica overrides — only what's needed on top of the original CDN CSS.
- * CDN files loaded in index.html:
- *   reset.css / hearder.css / main.css / module.css (from game.gtimg.cn)
+ * Replica overrides — Final version for identical look
  */
+
+:root {
+  --color-gold: #ffcc00;
+  --color-gold-light: #ffeb3b;
+  --color-white: #ffffff;
+  --color-text-gray: #cccccc;
+  --bg-dark-black: rgba(0, 0, 0, 0.85);
+  --bg-main-dark: #0a0a0a;
+  --font-primary: "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+body {
+  background-color: var(--bg-main-dark);
+  font-family: var(--font-primary);
+  margin: 0;
+  padding: 0;
+  color: var(--color-white);
+  overflow-x: hidden;
+}
 
 /* Constrain to 750px mobile width, centered */
 .wrap {
-  max-width: 750px;
+  max-width: 7.5rem;
+  margin: 0 auto;
+  position: relative;
+  background: #000;
+}
+
+/* Top Menu Styles */
+.top-menu {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 7.5rem;
+  height: 1.16rem;
+  background: var(--bg-dark-black);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.2rem;
+  box-sizing: border-box;
+}
+
+.logo img {
+  height: 0.8rem;
+}
+
+/* KV Section */
+.kv-box {
+  width: 100%;
+  height: 10rem;
+  background: url('https://game.gtimg.cn/images/hyrz/m/m202003/kv.jpg') no-repeat center top;
+  background-size: cover;
+  position: relative;
+}
+
+/* News Section */
+.sec2 {
+  background: #050505;
+  padding: 0.3rem 0.2rem;
+}
+
+.swiper-num {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #333;
+  margin-bottom: 0.2rem;
+}
+
+.swiper-num li {
+  padding: 0.2rem 0;
+  font-size: 0.3rem;
+  color: #999;
+  position: relative;
+}
+
+.swiper-num li.on {
+  color: var(--color-gold);
+  font-weight: bold;
+}
+
+.swiper-num li.on::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--color-gold);
+}
+
+.flex-around {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #eee;
+  padding: 0.15rem 0;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.news-label {
+  border: 1px solid #555;
+  color: #888;
+  font-size: 0.2rem;
+  padding: 2px 5px;
+  margin-right: 0.15rem;
+  border-radius: 3px;
+}
+
+.text {
+  flex: 1;
+  font-size: 0.26rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.date {
+  font-size: 0.22rem;
+  color: #666;
+  margin-left: 0.2rem;
+}
+
+/* Ninja Section */
+.sec5 {
+  background: linear-gradient(to bottom, #000, #0a1a33);
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.ninja-swiper .swiper-slide img {
+  width: 90%;
   margin: 0 auto;
 }
 
-/* Fix nav drawer positioning when centered */
-.top-menu {
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 750px;
+.ninja-name {
+  margin-top: 0.3rem;
+  font-size: 0.4rem;
+  color: var(--color-gold);
 }
 
-.top-menu-nav-con {
-  position: fixed;
-  top: 1.16rem;
-  right: calc(50% - 375px);
-  z-index: 998;
+.ninja-name span {
+  font-size: 0.24rem;
+  color: #fff;
+  display: block;
+  margin-top: 0.05rem;
 }
 
-@media (max-width: 750px) {
-  .top-menu-nav-con {
-    right: 0;
-  }
+.ninja-desc p {
+  font-size: 0.24rem;
+  color: #ccc;
+  padding: 0 0.5rem;
+  line-height: 1.6;
 }
 
-/* Popup overlay for age/download dialogs */
-.show-dia {
-  display: block !important;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3000;
-}
-.show-dia::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.75);
-  z-index: -1;
+/* Esports Section */
+.sec4 {
+  background: #050a1a url('//game.gtimg.cn/images/hyrz/m/m202003/bg-match.jpg') no-repeat center bottom;
+  background-size: cover;
+  padding-bottom: 1rem;
 }
 
-/* Fix sec2 visibility (original had display:none on first sec2) */
-.sec2 {
-  display: block !important;
+.event-top-show {
+  background: rgba(255,255,255,0.05);
+  margin: 0.2rem;
+  padding: 0.2rem;
+  border-radius: 5px;
+  display: block;
+  text-decoration: none;
+  color: #fff;
 }
 
-/* Swiper-num tabs (公告/攻略/赛事) */
-.swiper-num {
-  display: flex;
-  list-style: none;
-  padding: 0;
+.event-title {
+  color: var(--color-gold);
+  font-size: 0.32rem;
   margin: 0;
 }
-.swiper-num li {
-  flex: 1;
-  text-align: center;
-  font-size: 0.28rem;
-  color: #531503;
-  padding: 0.2rem 0 0.15rem;
-  cursor: pointer;
-  position: relative;
-  border-bottom: 2px solid transparent;
-}
-.swiper-num li.on {
-  color: #531503;
-  font-weight: bold;
-  border-bottom: 2px solid #531503;
-}
 
-/* Ensure ninja intro images display */
-.ninja-intro-box img {
-  width: 100%;
+.event-info span {
   display: block;
+  font-size: 0.22rem;
+  color: #888;
+  margin-top: 0.1rem;
 }
 
-/* View list items */
-#viewSwiper .swiper-slide {
-  width: 2.7rem;
-}
-#viewSwiper img {
-  width: 2.7rem;
-  height: 1.56rem;
-  object-fit: cover;
-  display: block;
-  border: 1px solid #e2c4a0;
-}
-#viewSwiper p {
-  font-size: 0.2rem;
-  color: #531503;
-  padding: 0.1rem 0;
-  text-align: center;
-}
-
-/* Event video list */
 .event-video-list {
   display: flex;
-  gap: 0.15rem;
   padding: 0 0.2rem;
+  gap: 0.2rem;
   list-style: none;
 }
+
 .event-video-list li {
   flex: 1;
 }
+
 .event-video-list img {
   width: 100%;
-  height: 1.3rem;
-  object-fit: cover;
-  display: block;
-}
-.event-video-title {
-  font-size: 0.2rem;
-  color: #531503;
-  margin-top: 0.1rem;
-}
-.mask {
-  display: none;
+  border: 1px solid #222;
+  border-radius: 4px;
 }
 
-/* Link more button */
-.link-more {
-  display: block;
+.event-video-title {
+  font-size: 0.22rem;
   text-align: center;
-  color: #531503;
-  font-size: 0.26rem;
-  padding: 0.2rem;
-  text-decoration: none;
+  margin-top: 0.1rem;
+  color: #aaa;
 }
+
+/* Reset / Utils */
+ul { padding: 0; margin: 0; list-style: none; }
+a { color: inherit; text-decoration: none; }
+.hide { display: none; }

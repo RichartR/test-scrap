@@ -1,0 +1,218 @@
+{
+  "newsData": {
+    "latest": [
+      {
+        "title": "5月15日更新公告，纲手[传说中的三忍]登场！",
+        "date": "05-14"
+      }
+    ],
+    "notice": [
+      {
+        "title": "5月15日更新公告，纲手[传说中的三忍]登场！",
+        "date": "05-14"
+      }
+    ],
+    "guide": [
+      {
+        "title": "【超前爆料】木叶豪放的女忍者，充满令人畏惧的魄力！",
+        "date": "05-06"
+      }
+    ],
+    "esports": [
+      {
+        "title": "2026火影忍者手游赛事 选手参赛行为规范条例（2026年3月）",
+        "date": "03-30"
+      }
+    ]
+  },
+  "ninjas": [
+    {
+      "name": "漩涡鸣人·自来也",
+      "title": "「修行之旅」",
+      "description": "鸣人与自来也二人可以切换作战，任意一人战败后还会进入暴走模式进一步强化技能。",
+      "image": "https://static.gametalk.qq.com/image/25/1778582257_76aa58bcf93a72ee8e7a2b4c333eb3b8.png",
+      "smallIcon": "https://game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90537/jn01.png"
+    },
+    {
+      "name": "漩涡鸣人·自来也",
+      "title": "「修行之旅」",
+      "description": "鸣人与自来也二人可以切换作战，任意一人战败后还会进入暴走模式进一步强化技能。",
+      "image": "https://static.gametalk.qq.com/image/25/1778582257_76aa58bcf93a72ee8e7a2b4c333eb3b8.png",
+      "smallIcon": "https://game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90537/jn11.png"
+    },
+    {
+      "name": "漩涡鸣人·自来也",
+      "title": "「修行之旅」",
+      "description": "鸣人与自来也二人可以切换作战，任意一人战败后还会进入暴走模式进一步强化技能。",
+      "image": "https://static.gametalk.qq.com/image/25/1778582257_76aa58bcf93a72ee8e7a2b4c333eb3b8.png",
+      "smallIcon": "https://game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90537/jn21.png"
+    },
+    {
+      "name": "漩涡鸣人·自来也",
+      "title": "「修行之旅」",
+      "description": "鸣人与自来也二人可以切换作战，任意一人战败后还会进入暴走模式进一步强化技能。",
+      "image": "https://static.gametalk.qq.com/image/25/1778582257_76aa58bcf93a72ee8e7a2b4c333eb3b8.png",
+      "smallIcon": "https://game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90537/jn31.png"
+    },
+    {
+      "name": "漩涡鸣人·自来也",
+      "title": "「修行之旅」",
+      "description": "鸣人与自来也二人可以切换作战，任意一人战败后还会进入暴走模式进一步强化技能。",
+      "image": "https://static.gametalk.qq.com/image/25/1778582257_76aa58bcf93a72ee8e7a2b4c333eb3b8.png",
+      "smallIcon": "https://game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90537/jn41.png"
+    },
+    {
+      "name": "漩涡鸣人·自来也",
+      "title": "「修行之旅」",
+      "description": "鸣人与自来也二人可以切换作战，任意一人战败后还会进入暴走模式进一步强化技能。",
+      "image": "https://static.gametalk.qq.com/image/25/1778582257_76aa58bcf93a72ee8e7a2b4c333eb3b8.png",
+      "smallIcon": "https://game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90523/jn01.png"
+    },
+    {
+      "name": "漩涡鸣人·自来也",
+      "title": "「修行之旅」",
+      "description": "鸣人与自来也二人可以切换作战，任意一人战败后还会进入暴走模式进一步强化技能。",
+      "image": "https://static.gametalk.qq.com/image/25/1778582257_76aa58bcf93a72ee8e7a2b4c333eb3b8.png",
+      "smallIcon": "https://game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90523/jn11.png"
+    },
+    {
+      "name": "漩涡鸣人·自来也",
+      "title": "「修行之旅」",
+      "description": "鸣人与自来也二人可以切换作战，任意一人战败后还会进入暴走模式进一步强化技能。",
+      "image": "https://static.gametalk.qq.com/image/25/1778582257_76aa58bcf93a72ee8e7a2b4c333eb3b8.png",
+      "smallIcon": "https://game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90523/jn21.png"
+    },
+    {
+      "name": "漩涡鸣人·自来也",
+      "title": "「修行之旅」",
+      "description": "鸣人与自来也二人可以切换作战，任意一人战败后还会进入暴走模式进一步强化技能。",
+      "image": "https://static.gametalk.qq.com/image/25/1778582257_76aa58bcf93a72ee8e7a2b4c333eb3b8.png",
+      "smallIcon": "https://game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90523/jn31.png"
+    },
+    {
+      "name": "漩涡鸣人·自来也",
+      "title": "「修行之旅」",
+      "description": "鸣人与自来也二人可以切换作战，任意一人战败后还会进入暴走模式进一步强化技能。",
+      "image": "https://static.gametalk.qq.com/image/25/1778582257_76aa58bcf93a72ee8e7a2b4c333eb3b8.png",
+      "smallIcon": "https://game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90523/jn41.png"
+    },
+    {
+      "name": "漩涡鸣人·自来也",
+      "title": "「修行之旅」",
+      "description": "鸣人与自来也二人可以切换作战，任意一人战败后还会进入暴走模式进一步强化技能。",
+      "image": "https://static.gametalk.qq.com/image/25/1778582257_76aa58bcf93a72ee8e7a2b4c333eb3b8.png",
+      "smallIcon": "https://game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90518/jn01.png"
+    },
+    {
+      "name": "漩涡鸣人·自来也",
+      "title": "「修行之旅」",
+      "description": "鸣人与自来也二人可以切换作战，任意一人战败后还会进入暴走模式进一步强化技能。",
+      "image": "https://static.gametalk.qq.com/image/25/1778582257_76aa58bcf93a72ee8e7a2b4c333eb3b8.png",
+      "smallIcon": "https://game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90518/jn11.png"
+    },
+    {
+      "name": "漩涡鸣人·自来也",
+      "title": "「修行之旅」",
+      "description": "鸣人与自来也二人可以切换作战，任意一人战败后还会进入暴走模式进一步强化技能。",
+      "image": "https://static.gametalk.qq.com/image/25/1778582257_76aa58bcf93a72ee8e7a2b4c333eb3b8.png",
+      "smallIcon": "https://game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90518/jn21.png"
+    },
+    {
+      "name": "漩涡鸣人·自来也",
+      "title": "「修行之旅」",
+      "description": "鸣人与自来也二人可以切换作战，任意一人战败后还会进入暴走模式进一步强化技能。",
+      "image": "https://static.gametalk.qq.com/image/25/1778582257_76aa58bcf93a72ee8e7a2b4c333eb3b8.png",
+      "smallIcon": "https://game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90518/jn31.png"
+    },
+    {
+      "name": "漩涡鸣人·自来也",
+      "title": "「修行之旅」",
+      "description": "鸣人与自来也二人可以切换作战，任意一人战败后还会进入暴走模式进一步强化技能。",
+      "image": "https://static.gametalk.qq.com/image/25/1778582257_76aa58bcf93a72ee8e7a2b4c333eb3b8.png",
+      "smallIcon": "https://game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90518/jn41.png"
+    },
+    {
+      "name": "漩涡鸣人·自来也",
+      "title": "「修行之旅」",
+      "description": "鸣人与自来也二人可以切换作战，任意一人战败后还会进入暴走模式进一步强化技能。",
+      "image": "https://static.gametalk.qq.com/image/25/1778582257_76aa58bcf93a72ee8e7a2b4c333eb3b8.png",
+      "smallIcon": "https://game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90536/jn01.png"
+    },
+    {
+      "name": "漩涡鸣人·自来也",
+      "title": "「修行之旅」",
+      "description": "鸣人与自来也二人可以切换作战，任意一人战败后还会进入暴走模式进一步强化技能。",
+      "image": "https://static.gametalk.qq.com/image/25/1778582257_76aa58bcf93a72ee8e7a2b4c333eb3b8.png",
+      "smallIcon": "https://game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90536/jn11.png"
+    },
+    {
+      "name": "漩涡鸣人·自来也",
+      "title": "「修行之旅」",
+      "description": "鸣人与自来也二人可以切换作战，任意一人战败后还会进入暴走模式进一步强化技能。",
+      "image": "https://static.gametalk.qq.com/image/25/1778582257_76aa58bcf93a72ee8e7a2b4c333eb3b8.png",
+      "smallIcon": "https://game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90536/jn21.png"
+    },
+    {
+      "name": "漩涡鸣人·自来也",
+      "title": "「修行之旅」",
+      "description": "鸣人与自来也二人可以切换作战，任意一人战败后还会进入暴走模式进一步强化技能。",
+      "image": "https://static.gametalk.qq.com/image/25/1778582257_76aa58bcf93a72ee8e7a2b4c333eb3b8.png",
+      "smallIcon": "https://game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90536/jn31.png"
+    },
+    {
+      "name": "漩涡鸣人·自来也",
+      "title": "「修行之旅」",
+      "description": "鸣人与自来也二人可以切换作战，任意一人战败后还会进入暴走模式进一步强化技能。",
+      "image": "https://static.gametalk.qq.com/image/25/1778582257_76aa58bcf93a72ee8e7a2b4c333eb3b8.png",
+      "smallIcon": "https://game.gtimg.cn/images/hyrz/act/a20221108gjx/ninja/90536/jn41.png"
+    }
+  ],
+  "banners": [
+    {
+      "img": "https://static.gametalk.qq.com/image/25/1778760421_f6c61afae8a61cf69f23f4fd071570b0.png",
+      "link": "https://hyrz.qq.com/cp/a20230308ren/page.shtml?rzwyID=72a2a539"
+    },
+    {
+      "img": "https://static.gametalk.qq.com/image/25/1778760408_4658db8eaa3785bfb0b11ebc9423896f.png",
+      "link": "https://hyrz.qq.com/cp/a20230308ren/page.shtml?rzwyID=72a2a50b"
+    },
+    {
+      "img": "https://static.gametalk.qq.com/image/25/1778760392_9e056dd32014e6c5fd3ba9b2ea5fd07f.png",
+      "link": "https://hyrz.qq.com/cp/a20230308ren/page.shtml?rzwyID=72a2a506"
+    },
+    {
+      "img": "https://static.gametalk.qq.com/image/25/1778760380_6dfe98b1cc81508868b44db32a175b90.png",
+      "link": "https://hyrz.qq.com/cp/a20230308ren/page.shtml?rzwyID=72a2a538"
+    },
+    {
+      "img": "https://static.gametalk.qq.com/image/25/1778760369_06ae914f00f1a535169f2d6df2dce94e.png",
+      "link": "https://hyrz.qq.com/cp/a20230308ren/page.shtml?rzwyID=72a2a500"
+    }
+  ],
+  "contentCenter": [
+    {
+      "title": "【新忍爆料】怎么也逃不出“花花的世界”！夕日红「少女」即将登场！",
+      "img": "https://static.gametalk.qq.com/image/25/1777455871_f8375672c9c4721692fec82704e8270f.png",
+      "link": "https://hyrz.qq.com/m/m202003/newsDetails.html?type=News&Id=18777394"
+    },
+    {
+      "title": "【新忍爆料】用极小的毒虫将敌人逼上绝路，油女取根「漂泊寻者」即将登场！",
+      "img": "https://static.gametalk.qq.com/image/25/1777276135_039e1dbb8e6e6fd57c08e2f1b43a680b.png",
+      "link": "https://hyrz.qq.com/m/m202003/newsDetails.html?type=News&Id=18775694"
+    },
+    {
+      "title": "【新忍爆料】藏于阴影之下，冷彻的野心家！志村团藏「漂泊寻者」即将登场！",
+      "img": "https://static.gametalk.qq.com/image/25/1777276048_3028a7bcbfff2dd7c94fe12ebe45e74d.png",
+      "link": "https://hyrz.qq.com/m/m202003/newsDetails.html?type=News&Id=18771615"
+    },
+    {
+      "title": "【新忍爆料】暗藏狂气的雾隐怪人，干柿鬼鲛「青年」即将登场！",
+      "img": "https://static.gametalk.qq.com/image/25/1775034444_0c0edc3e1b901c29a03dbf689f83baf1.jpg",
+      "link": "https://hyrz.qq.com/m/m202003/newsDetails.html?type=News&Id=18759254"
+    }
+  ],
+  "esports": {
+    "news": [],
+    "videos": []
+  }
+}
